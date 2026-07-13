@@ -11,7 +11,7 @@ Priority order (no API required until local verifier is ready):
 - [x] Separate technical failures (`ORACLE_API_ERROR`, `TARGET_GENERATION_ERROR`, `STEP_EXTRACTION_ERROR`)
 - [x] Target handoff extraction (`extract_handoff_step`, R1 think-block handling)
 - [x] Grading regression harness
-- [ ] Target non-empty rate >99% (see `outputs/target_step_diagnostic/`)
+- [x] Target non-empty rate >99% — diagnostic 100/100 OK (`outputs/target_step_diagnostic/`)
 
 ## P1 — Local probe (V3.3 labels)
 
