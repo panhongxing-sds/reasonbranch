@@ -1,0 +1,5 @@
+state,n_prefixes,n_continue_evaluated,n_branch_evaluated,n_continue_errors,n_branch_errors,continue_accuracy,branch_pass_at_4,branch_accuracy_at_4,branch_gain
+Stable,27,26,26,1,1,1.0,1.0,1.0,0.0
+Decision-sensitive,1,0,0,1,1,,,,
+Corrupted-recoverable,8,8,8,0,0,0.75,1.0,0.8125,0.25
+Corrupted-stuck,14,4,4,10,10,0.0,0.0,0.0,0.0

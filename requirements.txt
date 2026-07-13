@@ -1,0 +1,13 @@
+# Core (stdlib + numpy sufficient for probe training)
+numpy>=1.24
+
+# Dataset download & grading
+sympy>=1.12
+
+# Optional: full pipeline (vLLM cluster image usually has these)
+# transformers>=4.40
+# torch>=2.1
+# vllm>=0.6
+# openai>=1.0
+# datasets>=2.18
+# tqdm>=4.66

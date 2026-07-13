@@ -1,0 +1,15 @@
+{
+  "table": [
+    {
+      "state": "Unclear",
+      "n_prefixes": 18,
+      "continue_accuracy": 1.0,
+      "branch_pass_at_4": 1.0,
+      "branch_gain": 0.0
+    }
+  ],
+  "verdict": {
+    "checks": {},
+    "go": false
+  }
+}

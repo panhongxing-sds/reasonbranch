@@ -1,0 +1,4 @@
+state,n_prefixes,continue_accuracy,branch_pass_at_4,branch_gain
+Valid + Low Diversity,27,0.96,1.0,0.040000000000000036
+Valid + High Diversity,13,1.0,1.0,0.0
+Invalid Prefix,20,0.5,0.6666666666666666,0.16666666666666663

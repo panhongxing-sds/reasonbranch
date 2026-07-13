@@ -1,0 +1,18 @@
+{
+  "n_candidates": 7320,
+  "accept_rate": 0.8457650273224043,
+  "by_key": {
+    "candidate_g": 1464,
+    "candidate_b1": 1464,
+    "candidate_b2": 1464,
+    "candidate_b3": 1464,
+    "candidate_b4": 1464
+  },
+  "accept_by_key": {
+    "candidate_g": 1253,
+    "candidate_b1": 1227,
+    "candidate_b2": 1225,
+    "candidate_b3": 1253,
+    "candidate_b4": 1233
+  }
+}

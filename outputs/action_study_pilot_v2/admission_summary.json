@@ -1,0 +1,25 @@
+{
+  "total_prefixes": 1857,
+  "complete_trace_prefixes": 1857,
+  "substantive_prefixes": 1589,
+  "continue_ok": 1847,
+  "branch_4of4_ok": 1799,
+  "branch_partial": 55,
+  "admission_main": 1548,
+  "admission_partial": 1575,
+  "excluded_missing_context": 0,
+  "excluded_truncated_trace": 0,
+  "excluded_action_incomplete": 41,
+  "excluded_non_substantive": 268,
+  "branch_valid_histogram": {
+    "0": 3,
+    "1": 4,
+    "2": 11,
+    "3": 40,
+    "4": 1799
+  },
+  "unique_complete_trace_problems": 517,
+  "excluded_problems_missing_figure": 61,
+  "traces_ok": 520,
+  "traces_truncated": 219
+}

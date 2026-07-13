@@ -1,0 +1,53 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+dist/
+build/
+
+# Logs & local runtime
+logs/
+*.log
+nohup.out
+
+# Secrets — never commit
+.env
+.env.*
+key/
+**/api
+*.pem
+
+# Large experiment artifacts (regenerate via scripts)
+outputs/**/*.jsonl
+outputs/**/*.parquet
+outputs/**/*.safetensors
+outputs/**/checkpoints/
+outputs/**/figures/
+outputs/**/*.pre_*.jsonl
+
+# Keep human-readable reports & small summaries
+!outputs/**/*.md
+!outputs/**/summary.json
+!outputs/**/INDEX.md
+!outputs/**/*_summary.json
+
+# Cached model downloads (use specreason/models on cluster)
+*.pt
+*.bin
+*.safetensors
+
+# Large datasets (see data/README.md for download)
+data/deepscaler_preview.jsonl
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*~
+
+# OS
+.DS_Store
+Thumbs.db

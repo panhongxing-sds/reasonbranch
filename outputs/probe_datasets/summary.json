@@ -1,0 +1,13 @@
+{
+  "stage1_n": 1395,
+  "stage1_continue": 1229,
+  "stage1_intervention": 166,
+  "stage2_n": 166,
+  "stage2_branch": 74,
+  "stage2_handoff": 92,
+  "stage1_actions": {
+    "CONTINUE": 1229,
+    "HANDOFF": 92,
+    "BRANCH": 74
+  }
+}

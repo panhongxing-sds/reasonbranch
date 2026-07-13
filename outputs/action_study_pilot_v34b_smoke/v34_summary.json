@@ -1,0 +1,173 @@
+{
+  "n_summaries": 4,
+  "n_steps": 4,
+  "policy_stats": {
+    "SPECREASON": {
+      "n": 2,
+      "accuracy": 0.0,
+      "avg_continue": 0.0,
+      "avg_branch": 0.0,
+      "avg_handoff": 0.0,
+      "avg_oracle_api_error": 1.0,
+      "avg_target_steps": 0.0,
+      "avg_steps": 1.0,
+      "truncated_rate": 0.0,
+      "prefix_unchanged_rate": 0.0,
+      "oracle_api_error_rate": 1.0,
+      "target_empty_rate": 0.0,
+      "valid_for_comparison_rate": 0.0,
+      "final_answer_rate": 0.0,
+      "proxy_latency": 0.0
+    },
+    "CONDITIONAL_BRANCH": {
+      "n": 2,
+      "accuracy": 0.0,
+      "avg_continue": 0.0,
+      "avg_branch": 0.0,
+      "avg_handoff": 0.0,
+      "avg_oracle_api_error": 1.0,
+      "avg_target_steps": 0.0,
+      "avg_steps": 1.0,
+      "truncated_rate": 0.0,
+      "prefix_unchanged_rate": 0.0,
+      "oracle_api_error_rate": 1.0,
+      "target_empty_rate": 0.0,
+      "valid_for_comparison_rate": 0.0,
+      "final_answer_rate": 0.0,
+      "proxy_latency": 0.0
+    }
+  },
+  "oracle_step_api_error_rate": 1.0,
+  "transition_matrix": [
+    {
+      "from": "CONTINUE",
+      "CONTINUE": 0,
+      "BRANCH": 0,
+      "HANDOFF": 0,
+      "ORACLE_API_ERROR": 0
+    },
+    {
+      "from": "BRANCH",
+      "CONTINUE": 0,
+      "BRANCH": 0,
+      "HANDOFF": 0,
+      "ORACLE_API_ERROR": 0
+    },
+    {
+      "from": "HANDOFF",
+      "CONTINUE": 0,
+      "BRANCH": 0,
+      "HANDOFF": 0,
+      "ORACLE_API_ERROR": 0
+    },
+    {
+      "from": "ORACLE_API_ERROR",
+      "CONTINUE": 0,
+      "BRANCH": 0,
+      "HANDOFF": 0,
+      "ORACLE_API_ERROR": 0
+    }
+  ],
+  "transition_matrix_specreason": [
+    {
+      "from": "CONTINUE",
+      "CONTINUE": 0,
+      "BRANCH": 0,
+      "HANDOFF": 0,
+      "ORACLE_API_ERROR": 0
+    },
+    {
+      "from": "BRANCH",
+      "CONTINUE": 0,
+      "BRANCH": 0,
+      "HANDOFF": 0,
+      "ORACLE_API_ERROR": 0
+    },
+    {
+      "from": "HANDOFF",
+      "CONTINUE": 0,
+      "BRANCH": 0,
+      "HANDOFF": 0,
+      "ORACLE_API_ERROR": 0
+    },
+    {
+      "from": "ORACLE_API_ERROR",
+      "CONTINUE": 0,
+      "BRANCH": 0,
+      "HANDOFF": 0,
+      "ORACLE_API_ERROR": 0
+    }
+  ],
+  "transition_matrix_cond_branch": [
+    {
+      "from": "CONTINUE",
+      "CONTINUE": 0,
+      "BRANCH": 0,
+      "HANDOFF": 0,
+      "ORACLE_API_ERROR": 0
+    },
+    {
+      "from": "BRANCH",
+      "CONTINUE": 0,
+      "BRANCH": 0,
+      "HANDOFF": 0,
+      "ORACLE_API_ERROR": 0
+    },
+    {
+      "from": "HANDOFF",
+      "CONTINUE": 0,
+      "BRANCH": 0,
+      "HANDOFF": 0,
+      "ORACLE_API_ERROR": 0
+    },
+    {
+      "from": "ORACLE_API_ERROR",
+      "CONTINUE": 0,
+      "BRANCH": 0,
+      "HANDOFF": 0,
+      "ORACLE_API_ERROR": 0
+    }
+  ],
+  "p_continue_given_branch": 0.0,
+  "p_handoff_given_branch": 0.0,
+  "p_branch_given_branch": 0.0,
+  "mean_L_B": 0,
+  "median_L_B": 0,
+  "p_L_B_ge_1": 0,
+  "p_L_B_ge_3": 0,
+  "mean_L_H": 0,
+  "median_L_H": 0,
+  "paired_spec_vs_cond": [
+    {
+      "problem_id": "deepscaler_01126",
+      "delta_handoff": 0,
+      "delta_target": 0,
+      "n_branch_cond": 0,
+      "cascade_c": 0.0,
+      "spec_valid": false,
+      "cond_valid": false
+    },
+    {
+      "problem_id": "deepscaler_01708",
+      "delta_handoff": 0,
+      "delta_target": 0,
+      "n_branch_cond": 0,
+      "cascade_c": 0.0,
+      "spec_valid": false,
+      "cond_valid": false
+    }
+  ],
+  "paired_spec_vs_cond_valid": [],
+  "mean_delta_H": 0.0,
+  "mean_delta_H_valid_only": 0,
+  "mean_cascade_C": 0,
+  "paired_bootstrap": [
+    {
+      "metric": "delta_handoff",
+      "mean": 0.0,
+      "ci_lo": 0.0,
+      "ci_hi": 0.0
+    }
+  ],
+  "n_branch_events": 0
+}

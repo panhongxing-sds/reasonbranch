@@ -1,0 +1,63 @@
+{
+  "n_traces": 50,
+  "boxed_rate": 0.9,
+  "extracted_rate": 0.88,
+  "scored_rate": 0.88,
+  "accuracy_among_scored": 0.7954545454545454,
+  "failures": [
+    {
+      "problem_id": "deepscaler_01471",
+      "has_boxed": true,
+      "extracted_answer": "",
+      "gold_answer": "140x - 48x^2 + 4x^3",
+      "is_correct": null,
+      "evaluation_status": "NO_FINAL_ANSWER",
+      "math_equal_direct": null
+    },
+    {
+      "problem_id": "deepscaler_01622",
+      "has_boxed": false,
+      "extracted_answer": "",
+      "gold_answer": "$s_2\\ge 2s_1,s_1 \\le s_2$",
+      "is_correct": null,
+      "evaluation_status": "NO_FINAL_ANSWER",
+      "math_equal_direct": null
+    },
+    {
+      "problem_id": "deepscaler_01654",
+      "has_boxed": false,
+      "extracted_answer": "",
+      "gold_answer": "21",
+      "is_correct": null,
+      "evaluation_status": "NO_FINAL_ANSWER",
+      "math_equal_direct": null
+    },
+    {
+      "problem_id": "deepscaler_01377",
+      "has_boxed": false,
+      "extracted_answer": "",
+      "gold_answer": "7",
+      "is_correct": null,
+      "evaluation_status": "NO_FINAL_ANSWER",
+      "math_equal_direct": null
+    },
+    {
+      "problem_id": "deepscaler_01299",
+      "has_boxed": false,
+      "extracted_answer": "",
+      "gold_answer": "\\frac{3}{2}",
+      "is_correct": null,
+      "evaluation_status": "NO_FINAL_ANSWER",
+      "math_equal_direct": null
+    },
+    {
+      "problem_id": "deepscaler_01510",
+      "has_boxed": false,
+      "extracted_answer": "",
+      "gold_answer": "18",
+      "is_correct": null,
+      "evaluation_status": "NO_FINAL_ANSWER",
+      "math_equal_direct": null
+    }
+  ]
+}

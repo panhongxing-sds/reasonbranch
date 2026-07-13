@@ -1,0 +1,63 @@
+{
+  "n_scored": 1548,
+  "target_model": "/mnt/afs/L202500372/specreason/models/QwQ-32B",
+  "score_method": "greedy",
+  "oracle_by_tau": [
+    {
+      "tau": 5,
+      "n": 1548,
+      "continue_sufficient": 1454,
+      "weak_branch_rescuable": 65,
+      "handoff_required": 29,
+      "data_error": 0,
+      "branch_rescuable": 65,
+      "pct_continue_sufficient": 93.93,
+      "pct_weak_branch_rescuable": 4.2,
+      "pct_handoff_required": 1.87,
+      "pct_data_error": 0.0,
+      "pct_branch_rescuable": 4.2
+    },
+    {
+      "tau": 6,
+      "n": 1548,
+      "continue_sufficient": 1188,
+      "weak_branch_rescuable": 162,
+      "handoff_required": 198,
+      "data_error": 0,
+      "branch_rescuable": 162,
+      "pct_continue_sufficient": 76.74,
+      "pct_weak_branch_rescuable": 10.47,
+      "pct_handoff_required": 12.79,
+      "pct_data_error": 0.0,
+      "pct_branch_rescuable": 10.47
+    },
+    {
+      "tau": 7,
+      "n": 1548,
+      "continue_sufficient": 1186,
+      "weak_branch_rescuable": 162,
+      "handoff_required": 200,
+      "data_error": 0,
+      "branch_rescuable": 162,
+      "pct_continue_sufficient": 76.61,
+      "pct_weak_branch_rescuable": 10.47,
+      "pct_handoff_required": 12.92,
+      "pct_data_error": 0.0,
+      "pct_branch_rescuable": 10.47
+    },
+    {
+      "tau": 8,
+      "n": 1548,
+      "continue_sufficient": 420,
+      "weak_branch_rescuable": 151,
+      "handoff_required": 977,
+      "data_error": 0,
+      "branch_rescuable": 151,
+      "pct_continue_sufficient": 27.13,
+      "pct_weak_branch_rescuable": 9.75,
+      "pct_handoff_required": 63.11,
+      "pct_data_error": 0.0,
+      "pct_branch_rescuable": 9.75
+    }
+  ]
+}

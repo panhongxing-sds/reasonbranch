@@ -1,0 +1,10 @@
+{
+  "n_prefixes": 100,
+  "nonempty_rate": 1.0,
+  "failure_reasons": {
+    "OK": 100
+  },
+  "target_model": "/mnt/afs/L202500372/specreason/models/DeepSeek-R1-Distill-Qwen-14B",
+  "max_tokens": 384,
+  "max_model_len": 4096
+}

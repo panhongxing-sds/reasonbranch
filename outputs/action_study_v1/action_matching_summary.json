@@ -1,0 +1,29 @@
+{
+  "table": [
+    {
+      "prefix_state": "Unclear",
+      "n_prefixes": 18,
+      "continue_oracle_recoverable": 1.0,
+      "branch_oracle_recoverable": 1.0,
+      "rollback_oracle_recoverable": 1.0,
+      "continue_draft_tokens": 352.3333333333333,
+      "branch_draft_tokens": 1441.888888888889,
+      "rollback_draft_tokens": 1559.5384615384614,
+      "rollback_discarded_prefix_tokens": 0.0
+    }
+  ],
+  "paired": {
+    "all": {
+      "n": 13,
+      "mean_delta_branch_minus_rollback_oracle": 0.0,
+      "ci95_lo": 0.0,
+      "ci95_hi": 0.0,
+      "branch_oracle_wins_frac": 0.0,
+      "rollback_oracle_wins_frac": 0.0
+    }
+  },
+  "verdict": {
+    "go": false,
+    "checks": {}
+  }
+}

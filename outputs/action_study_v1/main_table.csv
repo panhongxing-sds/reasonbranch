@@ -1,0 +1,2 @@
+prefix_state,n_prefixes,continue_oracle_recoverable,branch_oracle_recoverable,rollback_oracle_recoverable,continue_draft_tokens,branch_draft_tokens,rollback_draft_tokens,rollback_discarded_prefix_tokens
+Unclear,18,1.0,1.0,1.0,352.3333333333333,1441.888888888889,1559.5384615384614,0.0

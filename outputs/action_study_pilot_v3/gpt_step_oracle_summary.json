@@ -1,0 +1,89 @@
+{
+  "n_total": 1548,
+  "n_expected": 1548,
+  "greedy_complete": 1548,
+  "all_branches_complete": 1548,
+  "n_oracle_stable": 1464,
+  "oracle_stable_rate": 0.9457364341085271,
+  "n_oracle_unstable": 84,
+  "n_partial_branch_evidence": 0,
+  "n_data_error_greedy": 0,
+  "n_eligible_probe": 1395,
+  "action_counts": {
+    "CONTINUE": 1229,
+    "HANDOFF": 92,
+    "BRANCH": 74
+  },
+  "action_ci": {
+    "CONTINUE": {
+      "rate": 0.8810035842293907,
+      "ci_lo": 0.8599839855525329,
+      "ci_hi": 0.9020216033151728
+    },
+    "BRANCH": {
+      "rate": 0.05304659498207885,
+      "ci_lo": 0.04069663769366022,
+      "ci_hi": 0.06604569439974915
+    },
+    "HANDOFF": {
+      "rate": 0.06594982078853047,
+      "ci_lo": 0.05079641782882144,
+      "ci_hi": 0.08137149103049078
+    }
+  },
+  "m_hist_g_reject": {
+    "0": 92,
+    "1": 18,
+    "2": 25,
+    "3": 17,
+    "4": 14
+  },
+  "n_g_reject_eligible": 166,
+  "qwQ_precision": 0.14482758620689656,
+  "qwQ_recall": 0.28378378378378377,
+  "n_qwq_weak_eligible": 145,
+  "n_gpt_branch_eligible": 74,
+  "behavior_tab": {
+    "Stable": {
+      "CONTINUE": 1117,
+      "HANDOFF": 67,
+      "BRANCH": 59
+    },
+    "Corrupted-recoverable": {
+      "CONTINUE": 71,
+      "HANDOFF": 14,
+      "BRANCH": 9
+    },
+    "Decision-sensitive": {
+      "CONTINUE": 21,
+      "BRANCH": 2,
+      "HANDOFF": 1
+    },
+    "Corrupted-stuck": {
+      "CONTINUE": 20,
+      "HANDOFF": 10,
+      "BRANCH": 4
+    }
+  },
+  "final_correct_by_action": {
+    "CONTINUE": {
+      "n": 1229,
+      "rate": 0.8722538649308381
+    },
+    "HANDOFF": {
+      "n": 92,
+      "rate": 0.7282608695652174
+    },
+    "BRANCH": {
+      "n": 74,
+      "rate": 0.7972972972972973
+    }
+  },
+  "rescue_at_k": {
+    "1": 0.2649397590361446,
+    "2": 0.36530120481927714,
+    "4": 0.4457831325301205
+  },
+  "rq1_branch_exists": true,
+  "branch_rate_eligible": 0.05304659498207885
+}

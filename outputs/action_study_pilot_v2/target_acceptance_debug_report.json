@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "target_model": "/mnt/afs/L202500372/specreason/models/QwQ-32B",
+    "draft_model": "/mnt/afs/L202500372/models/Qwen3.5-4B",
+    "debug": true,
+    "env_target": {
+      "timestamp": "2026-07-12T05:08:43Z",
+      "model_path": "/mnt/afs/L202500372/specreason/models/QwQ-32B",
+      "vllm_version": "0.22.1",
+      "transformers_version": "5.10.2",
+      "torch_version": "2.11.0+cu130",
+      "cuda_available": true,
+      "debug_mode": true,
+      "enable_prefix_caching": false,
+      "enable_chunked_prefill": false,
+      "enforce_eager": true,
+      "tokenizer_class": "Qwen2Tokenizer",
+      "tokenizer_revision": null
+    },
+    "env_draft": {
+      "timestamp": "2026-07-12T05:08:43Z",
+      "model_path": "/mnt/afs/L202500372/models/Qwen3.5-4B",
+      "vllm_version": "0.22.1",
+      "transformers_version": "5.10.2",
+      "torch_version": "2.11.0+cu130",
+      "cuda_available": true,
+      "debug_mode": true,
+      "enable_prefix_caching": false,
+      "enable_chunked_prefill": false,
+      "enforce_eager": true,
+      "tokenizer_class": "Qwen2Tokenizer",
+      "tokenizer_revision": null
+    }
+  },
+  "tests": [
+    {
+      "test": "self_replay_vllm",
+      "model": "/mnt/afs/L202500372/specreason/models/QwQ-32B",
+      "n_tokens_requested": 32,
+      "n_tokens_generated": 32,
+      "accepted_length": 32,
+      "first_reject_position": null,
+      "passed": true,
+      "prefix_token_count": 84,
+      "generated_ids_head": [
+        1128,
+        1372,
+        1939,
+        151644,
+        271,
+        71486,
+        11,
+        1077
+      ]
+    },
+    {
+      "test": "single_token_vllm",
+      "model": "/mnt/afs/L202500372/specreason/models/QwQ-32B",
+      "first_token_id": 1128,
+      "first_token_text": " what",
+      "accepted_length": 1,
+      "passed": true
+    },
+    {
+      "test": "self_replay_vllm",
+      "model": "/mnt/afs/L202500372/models/Qwen3.5-4B",
+      "n_tokens_requested": 32,
+      "n_tokens_generated": 32,
+      "accepted_length": 32,
+      "first_reject_position": null,
+      "passed": true,
+      "prefix_token_count": 86,
+      "generated_ids_head": [
+        220,
+        17,
+        15,
+        13,
+        561,
+        2542,
+        393,
+        36
+      ]
+    },
+    {
+      "test": "hf_vllm_alignment",
+      "model": "/mnt/afs/L202500372/models/Qwen3.5-4B",
+      "passed": null,
+      "skipped": true,
+      "note": "skipped via --skip-hf-align"
+    }
+  ],
+  "all_passed": true
+}

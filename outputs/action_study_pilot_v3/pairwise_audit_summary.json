@@ -1,0 +1,15 @@
+{
+  "n_reviewed": 162,
+  "verdict_counts": {
+    "UNKNOWN": 121,
+    "EQUIVALENT": 41
+  },
+  "branch_better_count": 0,
+  "equivalent_count": 41,
+  "greedy_better_count": 0,
+  "both_reject_count": 0,
+  "precision_branch_vs_qwq_weak": 0.0,
+  "cleaned_branch_rate_of_1548": 0.0,
+  "unlock_precision_threshold": 0.7,
+  "unlock_min_branch_n": 50
+}

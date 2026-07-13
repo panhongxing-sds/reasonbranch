@@ -1,0 +1,195 @@
+{
+  "admission": {
+    "total_prefixes": 1857,
+    "complete_trace_prefixes": 1857,
+    "substantive_prefixes": 1589,
+    "continue_ok": 1847,
+    "branch_4of4_ok": 1799,
+    "branch_partial": 55,
+    "admission_main": 1548,
+    "admission_partial": 1575,
+    "excluded_missing_context": 0,
+    "excluded_truncated_trace": 0,
+    "excluded_action_incomplete": 41,
+    "excluded_non_substantive": 268,
+    "branch_valid_histogram": {
+      "0": 3,
+      "1": 4,
+      "2": 11,
+      "3": 40,
+      "4": 1799
+    },
+    "unique_complete_trace_problems": 517,
+    "excluded_problems_missing_figure": 61,
+    "traces_ok": 520,
+    "traces_truncated": 219
+  },
+  "behavior_table": [
+    {
+      "state": "Stable",
+      "n_prefixes": 1318,
+      "n_continue_evaluated": 1318,
+      "n_branch_evaluated": 1318,
+      "n_continue_errors": 0,
+      "n_branch_errors": 0,
+      "continue_accuracy": 0.8884673748103187,
+      "branch_pass_at_4": 0.9028831562974203,
+      "branch_accuracy_at_4": 0.8877086494688923,
+      "branch_gain": 0.014415781487101653
+    },
+    {
+      "state": "Decision-sensitive",
+      "n_prefixes": 28,
+      "n_continue_evaluated": 28,
+      "n_branch_evaluated": 28,
+      "n_continue_errors": 0,
+      "n_branch_errors": 0,
+      "continue_accuracy": 0.03571428571428571,
+      "branch_pass_at_4": 0.14285714285714285,
+      "branch_accuracy_at_4": 0.08035714285714286,
+      "branch_gain": 0.10714285714285714
+    },
+    {
+      "state": "Corrupted-recoverable",
+      "n_prefixes": 128,
+      "n_continue_evaluated": 128,
+      "n_branch_evaluated": 128,
+      "n_continue_errors": 0,
+      "n_branch_errors": 0,
+      "continue_accuracy": 0.921875,
+      "branch_pass_at_4": 1.0,
+      "branch_accuracy_at_4": 0.939453125,
+      "branch_gain": 0.078125
+    },
+    {
+      "state": "Corrupted-stuck",
+      "n_prefixes": 74,
+      "n_continue_evaluated": 74,
+      "n_branch_evaluated": 74,
+      "n_continue_errors": 0,
+      "n_branch_errors": 0,
+      "continue_accuracy": 0.02702702702702703,
+      "branch_pass_at_4": 0.0,
+      "branch_accuracy_at_4": 0.0,
+      "branch_gain": -0.02702702702702703
+    }
+  ],
+  "behavior_table_partial": [
+    {
+      "state": "Stable",
+      "n_prefixes": 1335,
+      "n_continue_evaluated": 1335,
+      "n_branch_evaluated": 1335,
+      "n_continue_errors": 0,
+      "n_branch_errors": 0,
+      "continue_accuracy": 0.8868913857677903,
+      "branch_pass_at_4": 0.9026217228464419,
+      "branch_accuracy_at_4": 0.8866416978776528,
+      "branch_gain": 0.01573033707865168
+    },
+    {
+      "state": "Decision-sensitive",
+      "n_prefixes": 31,
+      "n_continue_evaluated": 31,
+      "n_branch_evaluated": 31,
+      "n_continue_errors": 0,
+      "n_branch_errors": 0,
+      "continue_accuracy": 0.06451612903225806,
+      "branch_pass_at_4": 0.1935483870967742,
+      "branch_accuracy_at_4": 0.11559139784946236,
+      "branch_gain": 0.12903225806451613
+    },
+    {
+      "state": "Corrupted-recoverable",
+      "n_prefixes": 133,
+      "n_continue_evaluated": 133,
+      "n_branch_evaluated": 133,
+      "n_continue_errors": 0,
+      "n_branch_errors": 0,
+      "continue_accuracy": 0.9097744360902256,
+      "branch_pass_at_4": 1.0,
+      "branch_accuracy_at_4": 0.9291979949874687,
+      "branch_gain": 0.09022556390977443
+    },
+    {
+      "state": "Corrupted-stuck",
+      "n_prefixes": 76,
+      "n_continue_evaluated": 76,
+      "n_branch_evaluated": 76,
+      "n_continue_errors": 0,
+      "n_branch_errors": 0,
+      "continue_accuracy": 0.02631578947368421,
+      "branch_pass_at_4": 0.0,
+      "branch_accuracy_at_4": 0.0,
+      "branch_gain": -0.02631578947368421
+    }
+  ],
+  "legacy_table": [
+    {
+      "state": "Valid + Low Diversity (legacy)",
+      "n_prefixes": 1149,
+      "n_continue_evaluated": 1148,
+      "n_branch_evaluated": 1148,
+      "n_continue_errors": 1,
+      "n_branch_errors": 1,
+      "continue_accuracy": 0.8649825783972126,
+      "branch_pass_at_4": 0.8850174216027874,
+      "branch_accuracy_at_4": 0.8667247386759582,
+      "branch_gain": 0.020034843205574804
+    },
+    {
+      "state": "Valid + High Diversity (legacy)",
+      "n_prefixes": 223,
+      "n_continue_evaluated": 223,
+      "n_branch_evaluated": 223,
+      "n_continue_errors": 0,
+      "n_branch_errors": 0,
+      "continue_accuracy": 0.8699551569506726,
+      "branch_pass_at_4": 0.8878923766816144,
+      "branch_accuracy_at_4": 0.8710762331838565,
+      "branch_gain": 0.017937219730941756
+    },
+    {
+      "state": "Invalid Prefix (legacy)",
+      "n_prefixes": 218,
+      "n_continue_evaluated": 214,
+      "n_branch_evaluated": 217,
+      "n_continue_errors": 4,
+      "n_branch_errors": 1,
+      "continue_accuracy": 0.5794392523364486,
+      "branch_pass_at_4": 0.6221198156682027,
+      "branch_accuracy_at_4": 0.575268817204301,
+      "branch_gain": 0.042680563331754184
+    },
+    {
+      "state": "Unclear",
+      "n_prefixes": 267,
+      "n_continue_evaluated": 262,
+      "n_branch_evaluated": 266,
+      "n_continue_errors": 5,
+      "n_branch_errors": 1,
+      "continue_accuracy": 0.7557251908396947,
+      "branch_pass_at_4": 0.8345864661654135,
+      "branch_accuracy_at_4": 0.7713032581453634,
+      "branch_gain": 0.07886127532571885
+    }
+  ],
+  "verdict": {
+    "checks": {
+      "stable_continue_approx_branch": true,
+      "decision_sensitive_correctness_gain_positive": true,
+      "decision_sensitive_exists": true
+    },
+    "ready_for_scale_up": false,
+    "ready_for_probe": false,
+    "ready_for_target_replay": false,
+    "metric_tier": {
+      "primary": "target_acceptance_gain (requires target replay)",
+      "auxiliary": [
+        "branch_pass_at_4",
+        "branch_gain_correctness",
+        "continue_accuracy"
+      ]
+    }
+  }
+}

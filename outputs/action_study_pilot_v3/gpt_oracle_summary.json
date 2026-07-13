@@ -1,0 +1,23 @@
+{
+  "n_total": 312,
+  "n_qwq_weak_branch": 162,
+  "n_dual_pass_stable": 290,
+  "dual_pass_stable_rate": 0.9294871794871795,
+  "canonical_counts_stable": {
+    "BOTH_ACCEPTABLE_EQUIVALENT": 172,
+    "BOTH_OK_BRANCH_PREFERRED": 54,
+    "BRANCH_ONLY_ACCEPTABLE": 19,
+    "GREEDY_ONLY_ACCEPTABLE": 14,
+    "BOTH_UNACCEPTABLE": 14,
+    "BOTH_OK_GREEDY_PREFERRED": 17
+  },
+  "n_true_branch_rescue_stable": 14,
+  "precision_gpt_branch_given_qwq_weak": 0.08641975308641975,
+  "cleaned_branch_rate_1548": 0.00904392764857881,
+  "by_bucket": {
+    "control_continue": 50,
+    "control_handoff": 50,
+    "control_random": 50,
+    "qwQ_weak_branch": 162
+  }
+}

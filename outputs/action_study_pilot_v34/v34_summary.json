@@ -1,0 +1,313 @@
+{
+  "n_summaries": 150,
+  "n_steps": 1067,
+  "policy_stats": {
+    "DRAFT_ONLY": {
+      "n": 30,
+      "accuracy": 0.0,
+      "avg_continue": 7.8,
+      "avg_branch": 0.0,
+      "avg_handoff": 0.0,
+      "avg_target_steps": 0.0,
+      "avg_steps": 7.8,
+      "truncated_rate": 0.36666666666666664,
+      "proxy_latency": 11.7
+    },
+    "TARGET_ONLY": {
+      "n": 30,
+      "accuracy": 0.0,
+      "avg_continue": 0.0,
+      "avg_branch": 0.0,
+      "avg_handoff": 6.866666666666666,
+      "avg_target_steps": 6.866666666666666,
+      "avg_steps": 6.866666666666666,
+      "truncated_rate": 0.5333333333333333,
+      "proxy_latency": 65.23333333333333
+    },
+    "SPECREASON": {
+      "n": 30,
+      "accuracy": 0.0,
+      "avg_continue": 3.2,
+      "avg_branch": 0.0,
+      "avg_handoff": 3.6,
+      "avg_target_steps": 3.6,
+      "avg_steps": 6.8,
+      "truncated_rate": 0.4666666666666667,
+      "proxy_latency": 39.0
+    },
+    "CONDITIONAL_BRANCH": {
+      "n": 30,
+      "accuracy": 0.0,
+      "avg_continue": 1.4,
+      "avg_branch": 0.7,
+      "avg_handoff": 5.133333333333334,
+      "avg_target_steps": 5.133333333333334,
+      "avg_steps": 7.233333333333333,
+      "truncated_rate": 0.5333333333333333,
+      "proxy_latency": 53.66666666666667
+    },
+    "ALWAYS_BRANCH": {
+      "n": 30,
+      "accuracy": 0.0,
+      "avg_continue": 0.0,
+      "avg_branch": 0.0,
+      "avg_handoff": 6.866666666666666,
+      "avg_target_steps": 6.866666666666666,
+      "avg_steps": 6.866666666666666,
+      "truncated_rate": 0.5333333333333333,
+      "proxy_latency": 65.23333333333333
+    }
+  },
+  "transition_matrix": [
+    {
+      "from": "CONTINUE",
+      "CONTINUE": 0.8429003021148036,
+      "BRANCH": 0.01812688821752266,
+      "HANDOFF": 0.13897280966767372
+    },
+    {
+      "from": "BRANCH",
+      "CONTINUE": 0.47368421052631576,
+      "BRANCH": 0.2631578947368421,
+      "HANDOFF": 0.2631578947368421
+    },
+    {
+      "from": "HANDOFF",
+      "CONTINUE": 0.08112874779541446,
+      "BRANCH": 0.010582010582010581,
+      "HANDOFF": 0.908289241622575
+    }
+  ],
+  "p_continue_given_branch": 0.47368421052631576,
+  "p_handoff_given_branch": 0.2631578947368421,
+  "p_branch_given_branch": 0.2631578947368421,
+  "mean_L_B": 1.0952380952380953,
+  "median_L_B": 0.0,
+  "p_L_B_ge_1": 0.42857142857142855,
+  "p_L_B_ge_3": 0.14285714285714285,
+  "mean_L_H": 0.15281899109792285,
+  "median_L_H": 0.0,
+  "paired_spec_vs_cond": [
+    {
+      "problem_id": "deepscaler_01027",
+      "delta_handoff": 3,
+      "delta_target": 3,
+      "n_branch_cond": 1,
+      "cascade_c": 3.0
+    },
+    {
+      "problem_id": "deepscaler_01029",
+      "delta_handoff": 5,
+      "delta_target": 5,
+      "n_branch_cond": 5,
+      "cascade_c": 1.0
+    },
+    {
+      "problem_id": "deepscaler_01032",
+      "delta_handoff": 4,
+      "delta_target": 4,
+      "n_branch_cond": 5,
+      "cascade_c": 0.8
+    },
+    {
+      "problem_id": "deepscaler_01034",
+      "delta_handoff": 0,
+      "delta_target": 0,
+      "n_branch_cond": 0,
+      "cascade_c": 0.0
+    },
+    {
+      "problem_id": "deepscaler_01098",
+      "delta_handoff": 1,
+      "delta_target": 1,
+      "n_branch_cond": 2,
+      "cascade_c": 0.5
+    },
+    {
+      "problem_id": "deepscaler_01105",
+      "delta_handoff": 0,
+      "delta_target": 0,
+      "n_branch_cond": 0,
+      "cascade_c": 0.0
+    },
+    {
+      "problem_id": "deepscaler_01115",
+      "delta_handoff": 0,
+      "delta_target": 0,
+      "n_branch_cond": 0,
+      "cascade_c": 0.0
+    },
+    {
+      "problem_id": "deepscaler_01126",
+      "delta_handoff": -2,
+      "delta_target": -2,
+      "n_branch_cond": 2,
+      "cascade_c": -1.0
+    },
+    {
+      "problem_id": "deepscaler_01158",
+      "delta_handoff": 1,
+      "delta_target": 1,
+      "n_branch_cond": 1,
+      "cascade_c": 1.0
+    },
+    {
+      "problem_id": "deepscaler_01225",
+      "delta_handoff": -2,
+      "delta_target": -2,
+      "n_branch_cond": 4,
+      "cascade_c": -0.5
+    },
+    {
+      "problem_id": "deepscaler_01247",
+      "delta_handoff": -7,
+      "delta_target": -7,
+      "n_branch_cond": 1,
+      "cascade_c": -7.0
+    },
+    {
+      "problem_id": "deepscaler_01249",
+      "delta_handoff": -8,
+      "delta_target": -8,
+      "n_branch_cond": 0,
+      "cascade_c": -8.0
+    },
+    {
+      "problem_id": "deepscaler_01253",
+      "delta_handoff": -8,
+      "delta_target": -8,
+      "n_branch_cond": 0,
+      "cascade_c": -8.0
+    },
+    {
+      "problem_id": "deepscaler_01264",
+      "delta_handoff": -5,
+      "delta_target": -5,
+      "n_branch_cond": 0,
+      "cascade_c": -5.0
+    },
+    {
+      "problem_id": "deepscaler_01278",
+      "delta_handoff": -7,
+      "delta_target": -7,
+      "n_branch_cond": 0,
+      "cascade_c": -7.0
+    },
+    {
+      "problem_id": "deepscaler_01310",
+      "delta_handoff": 0,
+      "delta_target": 0,
+      "n_branch_cond": 0,
+      "cascade_c": 0.0
+    },
+    {
+      "problem_id": "deepscaler_01468",
+      "delta_handoff": 0,
+      "delta_target": 0,
+      "n_branch_cond": 0,
+      "cascade_c": 0.0
+    },
+    {
+      "problem_id": "deepscaler_01471",
+      "delta_handoff": 0,
+      "delta_target": 0,
+      "n_branch_cond": 0,
+      "cascade_c": 0.0
+    },
+    {
+      "problem_id": "deepscaler_01499",
+      "delta_handoff": -6,
+      "delta_target": -6,
+      "n_branch_cond": 0,
+      "cascade_c": -6.0
+    },
+    {
+      "problem_id": "deepscaler_01562",
+      "delta_handoff": 0,
+      "delta_target": 0,
+      "n_branch_cond": 0,
+      "cascade_c": 0.0
+    },
+    {
+      "problem_id": "deepscaler_01604",
+      "delta_handoff": 2,
+      "delta_target": 2,
+      "n_branch_cond": 0,
+      "cascade_c": 2.0
+    },
+    {
+      "problem_id": "deepscaler_01622",
+      "delta_handoff": -2,
+      "delta_target": -2,
+      "n_branch_cond": 0,
+      "cascade_c": -2.0
+    },
+    {
+      "problem_id": "deepscaler_01654",
+      "delta_handoff": -7,
+      "delta_target": -7,
+      "n_branch_cond": 0,
+      "cascade_c": -7.0
+    },
+    {
+      "problem_id": "deepscaler_01655",
+      "delta_handoff": 0,
+      "delta_target": 0,
+      "n_branch_cond": 0,
+      "cascade_c": 0.0
+    },
+    {
+      "problem_id": "deepscaler_01669",
+      "delta_handoff": 0,
+      "delta_target": 0,
+      "n_branch_cond": 0,
+      "cascade_c": 0.0
+    },
+    {
+      "problem_id": "deepscaler_01708",
+      "delta_handoff": -5,
+      "delta_target": -5,
+      "n_branch_cond": 0,
+      "cascade_c": -5.0
+    },
+    {
+      "problem_id": "deepscaler_01720",
+      "delta_handoff": 0,
+      "delta_target": 0,
+      "n_branch_cond": 0,
+      "cascade_c": 0.0
+    },
+    {
+      "problem_id": "deepscaler_01750",
+      "delta_handoff": -3,
+      "delta_target": -3,
+      "n_branch_cond": 0,
+      "cascade_c": -3.0
+    },
+    {
+      "problem_id": "deepscaler_01778",
+      "delta_handoff": 0,
+      "delta_target": 0,
+      "n_branch_cond": 0,
+      "cascade_c": 0.0
+    },
+    {
+      "problem_id": "deepscaler_01793",
+      "delta_handoff": 0,
+      "delta_target": 0,
+      "n_branch_cond": 0,
+      "cascade_c": 0.0
+    }
+  ],
+  "mean_delta_H": -1.5333333333333334,
+  "mean_cascade_C": -0.275,
+  "paired_bootstrap": [
+    {
+      "metric": "delta_handoff",
+      "mean": -1.5448,
+      "ci_lo": -2.8,
+      "ci_hi": -0.3
+    }
+  ],
+  "n_branch_events": 21
+}

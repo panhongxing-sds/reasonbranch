@@ -1,0 +1,112 @@
+{
+  "behavior_table": [
+    {
+      "state": "Stable",
+      "n_prefixes": 27,
+      "n_continue_evaluated": 26,
+      "n_branch_evaluated": 26,
+      "n_continue_errors": 1,
+      "n_branch_errors": 1,
+      "continue_accuracy": 1.0,
+      "branch_pass_at_4": 1.0,
+      "branch_accuracy_at_4": 1.0,
+      "branch_gain": 0.0
+    },
+    {
+      "state": "Decision-sensitive",
+      "n_prefixes": 1,
+      "n_continue_evaluated": 0,
+      "n_branch_evaluated": 0,
+      "n_continue_errors": 1,
+      "n_branch_errors": 1,
+      "continue_accuracy": NaN,
+      "branch_pass_at_4": NaN,
+      "branch_accuracy_at_4": NaN,
+      "branch_gain": NaN
+    },
+    {
+      "state": "Corrupted-recoverable",
+      "n_prefixes": 8,
+      "n_continue_evaluated": 8,
+      "n_branch_evaluated": 8,
+      "n_continue_errors": 0,
+      "n_branch_errors": 0,
+      "continue_accuracy": 0.75,
+      "branch_pass_at_4": 1.0,
+      "branch_accuracy_at_4": 0.8125,
+      "branch_gain": 0.25
+    },
+    {
+      "state": "Corrupted-stuck",
+      "n_prefixes": 14,
+      "n_continue_evaluated": 4,
+      "n_branch_evaluated": 4,
+      "n_continue_errors": 10,
+      "n_branch_errors": 10,
+      "continue_accuracy": 0.0,
+      "branch_pass_at_4": 0.0,
+      "branch_accuracy_at_4": 0.0,
+      "branch_gain": 0.0
+    }
+  ],
+  "legacy_table": [
+    {
+      "state": "Valid + Low Diversity (legacy)",
+      "n_prefixes": 24,
+      "n_continue_evaluated": 23,
+      "n_branch_evaluated": 23,
+      "n_continue_errors": 1,
+      "n_branch_errors": 1,
+      "continue_accuracy": 1.0,
+      "branch_pass_at_4": 1.0,
+      "branch_accuracy_at_4": 1.0,
+      "branch_gain": 0.0
+    },
+    {
+      "state": "Valid + High Diversity (legacy)",
+      "n_prefixes": 4,
+      "n_continue_evaluated": 3,
+      "n_branch_evaluated": 3,
+      "n_continue_errors": 1,
+      "n_branch_errors": 1,
+      "continue_accuracy": 1.0,
+      "branch_pass_at_4": 1.0,
+      "branch_accuracy_at_4": 1.0,
+      "branch_gain": 0.0
+    },
+    {
+      "state": "Invalid Prefix (legacy)",
+      "n_prefixes": 22,
+      "n_continue_evaluated": 12,
+      "n_branch_evaluated": 12,
+      "n_continue_errors": 10,
+      "n_branch_errors": 10,
+      "continue_accuracy": 0.5,
+      "branch_pass_at_4": 0.6666666666666666,
+      "branch_accuracy_at_4": 0.5416666666666666,
+      "branch_gain": 0.16666666666666663
+    },
+    {
+      "state": "Unclear",
+      "n_prefixes": 10,
+      "n_continue_evaluated": 9,
+      "n_branch_evaluated": 9,
+      "n_continue_errors": 1,
+      "n_branch_errors": 1,
+      "continue_accuracy": 0.8888888888888888,
+      "branch_pass_at_4": 1.0,
+      "branch_accuracy_at_4": 0.9166666666666666,
+      "branch_gain": 0.11111111111111116
+    }
+  ],
+  "verdict": {
+    "checks": {
+      "stable_continue_approx_branch": true,
+      "decision_sensitive_exists": false,
+      "corrupted_recoverable_exists": true,
+      "corrupted_stuck_exists": true
+    },
+    "ready_for_probe": false,
+    "ready_for_scale_up": false
+  }
+}

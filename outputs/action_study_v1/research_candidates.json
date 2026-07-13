@@ -1,0 +1,333 @@
+[
+  {
+    "prefix_id": "math500_0004_p01_paragraph_end",
+    "problem_id": "math500_0004",
+    "progress": 0.455125284738041,
+    "score": 9,
+    "reasons": [
+      "non-terminal",
+      "bucket=Forward-uncertain",
+      "HIGH_DIV"
+    ],
+    "continue": 1,
+    "branch": 1,
+    "rollback": 1,
+    "validity": "VALID",
+    "confidence": 0.93,
+    "diversity": "HIGH_DIVERSITY",
+    "num_clusters": 2,
+    "bucket": "Forward-uncertain",
+    "trace_correct": 1
+  },
+  {
+    "prefix_id": "math500_0000_p00_paragraph_end",
+    "problem_id": "math500_0000",
+    "progress": 0.001466275659824047,
+    "score": 7,
+    "reasons": [
+      "non-terminal",
+      "action_split C=1 B=1 R=None"
+    ],
+    "continue": 1,
+    "branch": 1,
+    "rollback": null,
+    "validity": "VALID",
+    "confidence": 1.0,
+    "diversity": "LOW_DIVERSITY",
+    "num_clusters": 1,
+    "bucket": "Stable",
+    "trace_correct": 1
+  },
+  {
+    "prefix_id": "math500_0003_p00_paragraph_end",
+    "problem_id": "math500_0003",
+    "progress": 0.0813782991202346,
+    "score": 7,
+    "reasons": [
+      "non-terminal",
+      "action_split C=1 B=1 R=None"
+    ],
+    "continue": 1,
+    "branch": 1,
+    "rollback": null,
+    "validity": "VALID",
+    "confidence": 1.0,
+    "diversity": "LOW_DIVERSITY",
+    "num_clusters": 1,
+    "bucket": "Stable",
+    "trace_correct": 1
+  },
+  {
+    "prefix_id": "math500_0004_p00_paragraph_end",
+    "problem_id": "math500_0004",
+    "progress": 0.0856492027334852,
+    "score": 7,
+    "reasons": [
+      "non-terminal",
+      "action_split C=1 B=1 R=None"
+    ],
+    "continue": 1,
+    "branch": 1,
+    "rollback": null,
+    "validity": "VALID",
+    "confidence": 0.99,
+    "diversity": "LOW_DIVERSITY",
+    "num_clusters": 1,
+    "bucket": "Stable",
+    "trace_correct": 1
+  },
+  {
+    "prefix_id": "math500_0001_p00_paragraph_end",
+    "problem_id": "math500_0001",
+    "progress": 0.0893909626719057,
+    "score": 7,
+    "reasons": [
+      "non-terminal",
+      "action_split C=1 B=1 R=None"
+    ],
+    "continue": 1,
+    "branch": 1,
+    "rollback": null,
+    "validity": "VALID",
+    "confidence": 0.99,
+    "diversity": "LOW_DIVERSITY",
+    "num_clusters": 1,
+    "bucket": "Stable",
+    "trace_correct": 1
+  },
+  {
+    "prefix_id": "math500_0002_p00_paragraph_end",
+    "problem_id": "math500_0002",
+    "progress": 0.14602132895816242,
+    "score": 7,
+    "reasons": [
+      "non-terminal",
+      "action_split C=1 B=1 R=None"
+    ],
+    "continue": 1,
+    "branch": 1,
+    "rollback": null,
+    "validity": "VALID",
+    "confidence": 0.99,
+    "diversity": "LOW_DIVERSITY",
+    "num_clusters": 1,
+    "bucket": "Stable",
+    "trace_correct": 1
+  },
+  {
+    "prefix_id": "math500_0000_p01_paragraph_end",
+    "problem_id": "math500_0000",
+    "progress": 0.008064516129032258,
+    "score": 2,
+    "reasons": [
+      "non-terminal"
+    ],
+    "continue": 1,
+    "branch": 1,
+    "rollback": 1,
+    "validity": "VALID",
+    "confidence": 1.0,
+    "diversity": "LOW_DIVERSITY",
+    "num_clusters": 1,
+    "bucket": "Stable",
+    "trace_correct": 1
+  },
+  {
+    "prefix_id": "math500_0000_p02_paragraph_end",
+    "problem_id": "math500_0000",
+    "progress": 0.1092375366568915,
+    "score": 2,
+    "reasons": [
+      "non-terminal"
+    ],
+    "continue": 1,
+    "branch": 1,
+    "rollback": 1,
+    "validity": "VALID",
+    "confidence": 0.99,
+    "diversity": "LOW_DIVERSITY",
+    "num_clusters": 1,
+    "bucket": "Stable",
+    "trace_correct": 1
+  },
+  {
+    "prefix_id": "math500_0000_p03_paragraph_end",
+    "problem_id": "math500_0000",
+    "progress": 0.2690615835777126,
+    "score": 2,
+    "reasons": [
+      "non-terminal"
+    ],
+    "continue": 1,
+    "branch": 1,
+    "rollback": 1,
+    "validity": "VALID",
+    "confidence": 1.0,
+    "diversity": "LOW_DIVERSITY",
+    "num_clusters": 1,
+    "bucket": "Stable",
+    "trace_correct": 1
+  },
+  {
+    "prefix_id": "math500_0003_p01_paragraph_end",
+    "problem_id": "math500_0003",
+    "progress": 0.43255131964809385,
+    "score": 2,
+    "reasons": [
+      "non-terminal"
+    ],
+    "continue": 1,
+    "branch": 1,
+    "rollback": 1,
+    "validity": "VALID",
+    "confidence": 0.99,
+    "diversity": "LOW_DIVERSITY",
+    "num_clusters": 1,
+    "bucket": "Stable",
+    "trace_correct": 1
+  },
+  {
+    "prefix_id": "math500_0002_p01_paragraph_end",
+    "problem_id": "math500_0002",
+    "progress": 0.5283018867924528,
+    "score": 2,
+    "reasons": [
+      "non-terminal"
+    ],
+    "continue": 1,
+    "branch": 1,
+    "rollback": 1,
+    "validity": "VALID",
+    "confidence": 1.0,
+    "diversity": "LOW_DIVERSITY",
+    "num_clusters": 1,
+    "bucket": "Stable",
+    "trace_correct": 1
+  },
+  {
+    "prefix_id": "math500_0001_p01_paragraph_end",
+    "problem_id": "math500_0001",
+    "progress": 0.5555009823182712,
+    "score": 2,
+    "reasons": [
+      "non-terminal"
+    ],
+    "continue": 1,
+    "branch": 1,
+    "rollback": 1,
+    "validity": "VALID",
+    "confidence": 1.0,
+    "diversity": "LOW_DIVERSITY",
+    "num_clusters": 1,
+    "bucket": "Stable",
+    "trace_correct": 1
+  },
+  {
+    "prefix_id": "math500_0004_p02_paragraph_end",
+    "problem_id": "math500_0004",
+    "progress": 0.6596810933940774,
+    "score": 2,
+    "reasons": [
+      "non-terminal"
+    ],
+    "continue": 1,
+    "branch": 1,
+    "rollback": 1,
+    "validity": "VALID",
+    "confidence": 0.95,
+    "diversity": "LOW_DIVERSITY",
+    "num_clusters": 1,
+    "bucket": "Stable",
+    "trace_correct": 1
+  },
+  {
+    "prefix_id": "math500_0004_p03_paragraph_end",
+    "problem_id": "math500_0004",
+    "progress": 0.8469248291571754,
+    "score": 2,
+    "reasons": [
+      "non-terminal"
+    ],
+    "continue": 1,
+    "branch": 1,
+    "rollback": 1,
+    "validity": "VALID",
+    "confidence": 0.99,
+    "diversity": "LOW_DIVERSITY",
+    "num_clusters": 1,
+    "bucket": "Stable",
+    "trace_correct": 1
+  },
+  {
+    "prefix_id": "math500_0003_p02_paragraph_end",
+    "problem_id": "math500_0003",
+    "progress": 0.8885630498533724,
+    "score": 0,
+    "reasons": [
+      "late/terminal"
+    ],
+    "continue": 1,
+    "branch": 1,
+    "rollback": 1,
+    "validity": "VALID",
+    "confidence": 1.0,
+    "diversity": "LOW_DIVERSITY",
+    "num_clusters": 1,
+    "bucket": "Stable",
+    "trace_correct": 1
+  },
+  {
+    "prefix_id": "math500_0001_p02_paragraph_end",
+    "problem_id": "math500_0001",
+    "progress": 0.9174852652259332,
+    "score": 0,
+    "reasons": [
+      "late/terminal"
+    ],
+    "continue": 1,
+    "branch": 1,
+    "rollback": 1,
+    "validity": "VALID",
+    "confidence": 0.99,
+    "diversity": "LOW_DIVERSITY",
+    "num_clusters": 1,
+    "bucket": "Stable",
+    "trace_correct": 1
+  },
+  {
+    "prefix_id": "math500_0000_p04_paragraph_end",
+    "problem_id": "math500_0000",
+    "progress": 0.9406158357771262,
+    "score": 0,
+    "reasons": [
+      "late/terminal"
+    ],
+    "continue": 1,
+    "branch": 1,
+    "rollback": 1,
+    "validity": "VALID",
+    "confidence": 1.0,
+    "diversity": "LOW_DIVERSITY",
+    "num_clusters": 1,
+    "bucket": "Stable",
+    "trace_correct": 1
+  },
+  {
+    "prefix_id": "math500_0002_p02_paragraph_end",
+    "problem_id": "math500_0002",
+    "progress": 0.9606234618539786,
+    "score": 0,
+    "reasons": [
+      "late/terminal"
+    ],
+    "continue": 1,
+    "branch": 1,
+    "rollback": 1,
+    "validity": "VALID",
+    "confidence": 1.0,
+    "diversity": "LOW_DIVERSITY",
+    "num_clusters": 2,
+    "bucket": "Stable",
+    "trace_correct": 1
+  }
+]

@@ -1,0 +1,9 @@
+{
+  "n_samples": 0,
+  "n_problems": 0,
+  "target_model": "/mnt/afs/L202500372/specreason/models/QwQ-32B",
+  "engine": "vllm",
+  "n_reachable_in_pool": 0,
+  "n_sampled": 0,
+  "prefix_ids": []
+}

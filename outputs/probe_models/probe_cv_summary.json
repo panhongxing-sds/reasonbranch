@@ -1,0 +1,76 @@
+{
+  "stage1": {
+    "n_samples": 1395,
+    "label_key": "y_intervention",
+    "class_balance": {
+      "0": 1229,
+      "1": 166
+    },
+    "fold_metrics_mean": {
+      "auroc": 0.6757582171958665,
+      "pr_auc": 0.1880107995334997,
+      "recall_pos": 0.5116256157635468,
+      "false_pos_rate": 0.26731038340735547
+    },
+    "oof_confusion_matrix": [
+      [
+        899,
+        330
+      ],
+      [
+        80,
+        86
+      ]
+    ],
+    "feature_keys": [
+      "entropy",
+      "top1_prob",
+      "top2_prob",
+      "margin",
+      "diversity_entropy",
+      "reasoning_progress",
+      "has_wait",
+      "has_but",
+      "has_alternatively",
+      "prefix_chars",
+      "prefix_blocks"
+    ]
+  },
+  "stage2": {
+    "n_samples": 166,
+    "label_key": "y_branch",
+    "class_balance": {
+      "0": 92,
+      "1": 74
+    },
+    "fold_metrics_mean": {
+      "auroc": 0.718275636300404,
+      "pr_auc": 0.6152126111458307,
+      "recall_pos": 0.6432234432234432,
+      "false_pos_rate": 0.2909526077637533
+    },
+    "oof_confusion_matrix": [
+      [
+        65,
+        27
+      ],
+      [
+        27,
+        47
+      ]
+    ],
+    "feature_keys": [
+      "entropy",
+      "top1_prob",
+      "top2_prob",
+      "margin",
+      "diversity_entropy",
+      "reasoning_progress",
+      "has_wait",
+      "has_but",
+      "has_alternatively",
+      "prefix_chars",
+      "prefix_blocks"
+    ]
+  }
+}

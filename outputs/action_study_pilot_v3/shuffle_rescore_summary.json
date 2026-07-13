@@ -1,0 +1,12 @@
+{
+  "n_prefixes": 200,
+  "n_candidates": 1000,
+  "exact_agreement": 0.659,
+  "within1_agreement": 0.763,
+  "accept_agreement": 0.827,
+  "oracle_action_agreement": 0.67,
+  "unlock_thresholds": {
+    "accept_agreement": 0.9,
+    "oracle_action_agreement": 0.85
+  }
+}
