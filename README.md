@@ -6,6 +6,54 @@ Repository: [github.com/panhongxing-sds/reasonbranch](https://github.com/panhong
 
 ---
 
+## 项目现状(先看这个)
+
+**一句话:有真加速(2.21×),但还没有自己的 method。**
+
+### 确定有的(真东西)
+
+| 进展 | 状态 | 说明 |
+|---|---|---|
+| **真加速 2.21×** | ✅ 已验证 | 32B 自生成 21 tok/s → EAGLE-3 head **47 tok/s**,vLLM 同引擎可复现 |
+| 超过 UMbreLLa 树基线 | ✅ | 绝对 tok/s 47 > 40(树 SD 2.23×),尽管接受长度更低 |
+| 首个 Qwen-32B EAGLE-3 推理 head | ✅ | epoch6 收敛,严重欠训(1600 条/2048 截断),headroom 大 |
+
+**但要诚实**:这是 **EAGLE-3(别人已有的方法)** 应用到一个尚无公开 head 的 32B 推理模型。
+价值 = 工程 + 首个可用 head,**不是**"发明了一个新算法"。
+
+### 还没有的(顶会 method 所需)
+
+| 目标 | 状态 |
+|---|---|
+| **自己的**、能发顶会的 method | ❌ 还没有 |
+| 比 vanilla EAGLE-3 **更快**的新机制 | ❌ 还没证明 |
+| 3×+ 稳定加速(官方 8B head 参考 3.24×) | ❌ 目前 2.21×,head 欠训 |
+
+### 方法候选(有信号,未落地)
+
+**Confidence-Gated Adaptive-Depth**(置信度自适应草稿深度):
+- draft 置信度预测接受 AUC **0.86**,校准干净(prob>0.95 → accept 0.97) → **信号是真的**
+- **还没**写成能跑的解码器,**还没**证明比 vanilla EAGLE-3 更快
+- 当前欠训 head 是"短跑者"(几乎无长 run),前提暂不成立
+
+→ 不能当主结果,不能当论文 method。详见 [`method_confidence_gated_adaptive_depth.md`](outputs/reports/method_confidence_gated_adaptive_depth.md)
+
+### 进度
+
+```
+[████████░░░░░░░░░░░░] ~40%
+
+✅ 验证侧全灭,搞清楚了什么路走不通
+✅ 转到 drafter 侧,训出可用 EAGLE-3 head,2.21× 真加速
+⬜ 训更强的 head(预期 3×+,工程)
+⬜ 实现 method(置信自适应深度等)
+⬜ 证明 method 跑赢 vanilla EAGLE-3 → 这才算顶会 story
+```
+
+**下一步唯一有意义的路径**:训强 head → 在上面实现并 benchmark method → **必须超过 vanilla EAGLE-3 固定链**。
+
+---
+
 ## 当前主结果
 
 | 配置 | 引擎 | tok/s | speedup |
