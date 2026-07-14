@@ -1,10 +1,10 @@
 # Outputs 索引
 
-## 从这里开始（整理后的唯一阅读入口）
+## 从这里开始
 
-👉 **[`reports/README.md`](reports/README.md)**
-
-内含：总决策矩阵 + 每个方法的完整报告（V3.5 / V3.6 / V4.0 / SD①–④）。
+👉 **主结果**: [`reports/eagle3_drafter_pivot.md`](reports/eagle3_drafter_pivot.md) (EAGLE-3 head **2.21×**)  
+👉 **报告总索引**: [`reports/README.md`](reports/README.md)  
+👉 **代码**: [`../eagle3/`](../eagle3/)
 
 ---
 
