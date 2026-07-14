@@ -1,0 +1,95 @@
+{
+  "policies": [
+    "draft_only",
+    "selfconf",
+    "target_only",
+    "target_verify"
+  ],
+  "n_paired_problems": 15,
+  "per_policy": {
+    "draft_only": {
+      "n": 15,
+      "n_paired": 15,
+      "accuracy": 0.8888888888888888,
+      "accuracy_paired": 0.8888888888888888,
+      "mean_wall_sec": 7.038157756254077,
+      "mean_steps": 24.333333333333332,
+      "mean_handoffs": 0.0,
+      "mean_accepts": 24.333333333333332,
+      "mean_verify_sec": 0.0,
+      "mean_target_sec": 0.0,
+      "mean_draft_sec": 7.038157756254077,
+      "accept_rate": 1.0,
+      "speedup_vs_target": 1.900981068463394
+    },
+    "selfconf": {
+      "n": 15,
+      "n_paired": 15,
+      "accuracy": 1.0,
+      "accuracy_paired": 1.0,
+      "mean_wall_sec": 12.492875342195232,
+      "mean_steps": 19.466666666666665,
+      "mean_handoffs": 7.533333333333333,
+      "mean_accepts": 11.933333333333334,
+      "mean_verify_sec": 1.847267005716761,
+      "mean_target_sec": 4.852778828019897,
+      "mean_draft_sec": 5.792829508458575,
+      "accept_rate": 0.5856004017768723,
+      "speedup_vs_target": 1.070962791592763
+    },
+    "target_only": {
+      "n": 15,
+      "n_paired": 15,
+      "accuracy": 1.0,
+      "accuracy_paired": 1.0,
+      "mean_wall_sec": 13.3794046514978,
+      "mean_steps": 17.466666666666665,
+      "mean_handoffs": 17.466666666666665,
+      "mean_accepts": 0.0,
+      "mean_verify_sec": 0.0,
+      "mean_target_sec": 13.3794046514978,
+      "mean_draft_sec": 0.0,
+      "accept_rate": 0.0,
+      "speedup_vs_target": 1.0
+    },
+    "target_verify": {
+      "n": 15,
+      "n_paired": 15,
+      "accuracy": 0.7777777777777778,
+      "accuracy_paired": 0.7777777777777778,
+      "mean_wall_sec": 10.342414712160826,
+      "mean_steps": 23.2,
+      "mean_handoffs": 1.9333333333333333,
+      "mean_accepts": 21.266666666666666,
+      "mean_verify_sec": 4.1854289020101225,
+      "mean_target_sec": 0.6850781145195166,
+      "mean_draft_sec": 5.471907695631186,
+      "accept_rate": 0.9252352033930982,
+      "speedup_vs_target": 1.293644185024414
+    }
+  },
+  "by_dataset": {
+    "gsm8k": {
+      "draft_only": {
+        "n": 15,
+        "accuracy": 0.8888888888888888,
+        "mean_wall_sec": 7.038157756254077
+      },
+      "selfconf": {
+        "n": 15,
+        "accuracy": 1.0,
+        "mean_wall_sec": 12.492875342195232
+      },
+      "target_only": {
+        "n": 15,
+        "accuracy": 1.0,
+        "mean_wall_sec": 13.3794046514978
+      },
+      "target_verify": {
+        "n": 15,
+        "accuracy": 0.7777777777777778,
+        "mean_wall_sec": 10.342414712160826
+      }
+    }
+  }
+}

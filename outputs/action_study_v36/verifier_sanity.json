@@ -1,0 +1,77 @@
+{
+  "gate1": {
+    "gate": "single_token_labels",
+    "pass": true,
+    "accept_ids": [
+      20829
+    ],
+    "reject_ids": [
+      87293
+    ]
+  },
+  "gate2_3": {
+    "gate": "context_identical_and_position",
+    "pass": true,
+    "context_identical": true,
+    "last_token_is_label": true,
+    "logprob_at_label_position": true,
+    "prompt_len": 79,
+    "prompt_logprobs_len": 79
+  },
+  "gate4": {
+    "gate": "obvious_separation",
+    "pass": true,
+    "auc": 0.9725,
+    "correct_mean": 2.128608536720276,
+    "wrong_mean": -0.3829773187637329,
+    "correct_min": 1.1875,
+    "wrong_max": 1.685899257659912,
+    "margin_mean": 2.511585855484009,
+    "overlap_count": 8,
+    "correct_scores": [
+      2.687,
+      2.646,
+      2.5,
+      2.768,
+      1.625,
+      2.366,
+      1.304,
+      1.777,
+      1.312,
+      2.246,
+      2.312,
+      2.391,
+      2.738,
+      2.312,
+      2.509,
+      2.312,
+      2.0,
+      1.188,
+      1.691,
+      1.886
+    ],
+    "wrong_scores": [
+      -2.379,
+      -1.125,
+      0.188,
+      1.516,
+      -1.688,
+      -1.405,
+      0.688,
+      1.256,
+      -1.895,
+      0.438,
+      -1.125,
+      0.226,
+      -1.665,
+      0.343,
+      -1.062,
+      -1.625,
+      1.373,
+      0.434,
+      1.686,
+      -1.837
+    ]
+  },
+  "all_pass": true
+}

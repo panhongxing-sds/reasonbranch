@@ -1,0 +1,193 @@
+{
+  "n": 179,
+  "n_pos": 50,
+  "n_neg": 129,
+  "base_rate": 0.27932960893854747,
+  "by_dataset": {
+    "aime": {
+      "n": 24,
+      "n_pos": 2,
+      "base_rate": 0.08333333333333333,
+      "verifier_auc": 0.95,
+      "self_eval_auc": 0.45454545454545453
+    },
+    "aime_calib": {
+      "n": 48,
+      "n_pos": 3,
+      "base_rate": 0.0625,
+      "verifier_auc": 0.35555555555555557,
+      "self_eval_auc": 0.6592592592592592
+    },
+    "gsm8k": {
+      "n": 107,
+      "n_pos": 45,
+      "base_rate": 0.4205607476635514,
+      "verifier_auc": 0.5992555831265509,
+      "self_eval_auc": 0.8283154121863799
+    }
+  },
+  "verifier_score_auc": 0.6665416354088523,
+  "best_draft_signal": {
+    "signal": "self_eval_logit",
+    "orientation": 1,
+    "auc": 0.844031007751938,
+    "auc_power": 0.844031007751938,
+    "ap": 0.6620859223363547
+  },
+  "best_single_operating": {
+    "n": 179,
+    "n_pos": 50,
+    "base_rate": 0.27932960893854747,
+    "coverage_at_precision90": 0.0,
+    "max_precision_at_coverage10": 0.7894736842105263
+  },
+  "per_signal": [
+    {
+      "signal": "self_eval_logit",
+      "orientation": 1,
+      "auc": 0.844031007751938,
+      "auc_power": 0.844031007751938,
+      "ap": 0.6620859223363547
+    },
+    {
+      "signal": "mean_margin",
+      "orientation": 1,
+      "auc": 0.7413953488372093,
+      "auc_power": 0.7413953488372093,
+      "ap": 0.5129509052775965
+    },
+    {
+      "signal": "repetition_rate",
+      "orientation": -1,
+      "auc": 0.27209302325581397,
+      "auc_power": 0.727906976744186,
+      "ap": 0.1914189781850833
+    },
+    {
+      "signal": "mean_entropy",
+      "orientation": -1,
+      "auc": 0.6995348837209302,
+      "auc_power": 0.6995348837209302,
+      "ap": 0.4123753052386335
+    },
+    {
+      "signal": "max_entropy",
+      "orientation": -1,
+      "auc": 0.6729457364341085,
+      "auc_power": 0.6729457364341085,
+      "ap": 0.43347960998545204
+    },
+    {
+      "signal": "mean_logprob",
+      "orientation": 1,
+      "auc": 0.6688372093023256,
+      "auc_power": 0.6688372093023256,
+      "ap": 0.3598831360478702
+    },
+    {
+      "signal": "perplexity",
+      "orientation": -1,
+      "auc": 0.6688372093023256,
+      "auc_power": 0.6688372093023256,
+      "ap": 0.3598831360478702
+    },
+    {
+      "signal": "verifier_score",
+      "orientation": 1,
+      "auc": 0.6665416354088523,
+      "auc_power": 0.6665416354088523,
+      "ap": 0.3998435311339515
+    },
+    {
+      "signal": "n_tokens",
+      "orientation": 1,
+      "auc": 0.6068992248062015,
+      "auc_power": 0.6068992248062015,
+      "ap": 0.31986324678447653
+    },
+    {
+      "signal": "min_margin",
+      "orientation": 1,
+      "auc": 0.5636434108527132,
+      "auc_power": 0.5636434108527132,
+      "ap": 0.29162711346914333
+    },
+    {
+      "signal": "last_logprob",
+      "orientation": 1,
+      "auc": 0.45193798449612405,
+      "auc_power": 0.548062015503876,
+      "ap": 0.3396515331817648
+    },
+    {
+      "signal": "min_logprob",
+      "orientation": 1,
+      "auc": 0.4673643410852713,
+      "auc_power": 0.5326356589147287,
+      "ap": 0.28977629780056485
+    },
+    {
+      "signal": "char_len",
+      "orientation": 1,
+      "auc": 0.5054263565891473,
+      "auc_power": 0.5054263565891473,
+      "ap": 0.26229915465810927
+    }
+  ],
+  "fused_draft_only": {
+    "n_folds": 5,
+    "n_groups": 26,
+    "features": [
+      "mean_logprob",
+      "min_logprob",
+      "last_logprob",
+      "perplexity",
+      "mean_entropy",
+      "max_entropy",
+      "mean_margin",
+      "min_margin",
+      "self_eval_logit",
+      "repetition_rate",
+      "n_tokens"
+    ],
+    "oof_auc": 0.8334883720930233,
+    "oof_ap": 0.6063044541169187,
+    "operating": {
+      "n": 179,
+      "n_pos": 50,
+      "base_rate": 0.27932960893854747,
+      "coverage_at_precision90": 0.00558659217877095,
+      "max_precision_at_coverage10": 0.6923076923076923
+    }
+  },
+  "fused_with_verifier": {
+    "n_folds": 5,
+    "n_groups": 26,
+    "features": [
+      "mean_logprob",
+      "min_logprob",
+      "last_logprob",
+      "perplexity",
+      "mean_entropy",
+      "max_entropy",
+      "mean_margin",
+      "min_margin",
+      "self_eval_logit",
+      "repetition_rate",
+      "n_tokens",
+      "verifier_score"
+    ],
+    "oof_auc": 0.8299224806201551,
+    "oof_ap": 0.6086344597430565,
+    "operating": {
+      "n": 179,
+      "n_pos": 50,
+      "base_rate": 0.27932960893854747,
+      "coverage_at_precision90": 0.0111731843575419,
+      "max_precision_at_coverage10": 0.6774193548387096
+    }
+  },
+  "best_discriminative_power": 0.844031007751938,
+  "coverage_at_precision90": 0.00558659217877095,
+  "decision": "GREEN"
+}

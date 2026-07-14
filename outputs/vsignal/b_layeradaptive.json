@@ -1,0 +1,248 @@
+{
+  "n_cycles": 1440,
+  "n_layers": 64,
+  "accept_len_mean": 3.202777777777778,
+  "oracle_compute_saving_ceiling": 0.4747,
+  "probes": {
+    "m1_L0": {
+      "auc_reject": 0.8624,
+      "best@accloss=0.00": {
+        "probe_layer": 0,
+        "thr": 0.9481,
+        "compute_saving": 0.004443359374999956,
+        "speedup": 1.0044631909362893,
+        "commit_ratio": 1.0,
+        "fire_rate": 0.008333333333333333,
+        "acc_loss_per_cycle": 0.0
+      },
+      "best@accloss=0.02": {
+        "probe_layer": 0,
+        "thr": 0.9481,
+        "compute_saving": 0.004443359374999956,
+        "speedup": 1.0044631909362893,
+        "commit_ratio": 1.0,
+        "fire_rate": 0.008333333333333333,
+        "acc_loss_per_cycle": 0.0
+      },
+      "best@accloss=0.10": {
+        "probe_layer": 0,
+        "thr": 0.8853,
+        "compute_saving": 0.12937011718750002,
+        "speedup": 1.1226940398996872,
+        "commit_ratio": 0.9774509803921568,
+        "fire_rate": 0.2263888888888889,
+        "acc_loss_per_cycle": 0.09583333333333334
+      }
+    },
+    "m2_L9": {
+      "auc_reject": 0.8618,
+      "best@accloss=0.00": {
+        "probe_layer": 9,
+        "thr": 0.9588,
+        "compute_saving": 0.0033691406250000444,
+        "speedup": 1.0033805301063152,
+        "commit_ratio": 1.0,
+        "fire_rate": 0.008333333333333333,
+        "acc_loss_per_cycle": 0.0
+      },
+      "best@accloss=0.02": {
+        "probe_layer": 9,
+        "thr": 0.9272,
+        "compute_saving": 0.046142578125,
+        "speedup": 1.043578226444575,
+        "commit_ratio": 0.9954248366013072,
+        "fire_rate": 0.09166666666666666,
+        "acc_loss_per_cycle": 0.019444444444444445
+      },
+      "best@accloss=0.10": {
+        "probe_layer": 9,
+        "thr": 0.8924,
+        "compute_saving": 0.11367187499999998,
+        "speedup": 1.1068651935579579,
+        "commit_ratio": 0.9810457516339869,
+        "fire_rate": 0.23055555555555557,
+        "acc_loss_per_cycle": 0.08055555555555556
+      }
+    },
+    "m3_L18": {
+      "auc_reject": 0.8624,
+      "best@accloss=0.00": {
+        "probe_layer": 18,
+        "thr": 0.9565,
+        "compute_saving": 0.003173828125,
+        "speedup": 1.003183933382317,
+        "commit_ratio": 1.0,
+        "fire_rate": 0.008333333333333333,
+        "acc_loss_per_cycle": 0.0
+      },
+      "best@accloss=0.02": {
+        "probe_layer": 18,
+        "thr": 0.9287,
+        "compute_saving": 0.036865234375,
+        "speedup": 1.0355618512719833,
+        "commit_ratio": 0.9973856209150327,
+        "fire_rate": 0.09722222222222222,
+        "acc_loss_per_cycle": 0.011111111111111112
+      },
+      "best@accloss=0.10": {
+        "probe_layer": 18,
+        "thr": 0.8935,
+        "compute_saving": 0.094970703125,
+        "speedup": 1.0832711827649864,
+        "commit_ratio": 0.9803921568627451,
+        "fire_rate": 0.23472222222222222,
+        "acc_loss_per_cycle": 0.08333333333333333
+      }
+    },
+    "m4_L27": {
+      "auc_reject": 0.8635,
+      "best@accloss=0.00": {
+        "probe_layer": 27,
+        "thr": 0.9608,
+        "compute_saving": 0.0021484375000000444,
+        "speedup": 1.0021530632217654,
+        "commit_ratio": 1.0,
+        "fire_rate": 0.008333333333333333,
+        "acc_loss_per_cycle": 0.0
+      },
+      "best@accloss=0.02": {
+        "probe_layer": 27,
+        "thr": 0.9298,
+        "compute_saving": 0.030859375000000022,
+        "speedup": 1.0271211534459275,
+        "commit_ratio": 0.9954248366013072,
+        "fire_rate": 0.09444444444444444,
+        "acc_loss_per_cycle": 0.019444444444444445
+      },
+      "best@accloss=0.10": {
+        "probe_layer": 27,
+        "thr": 0.8978,
+        "compute_saving": 0.07792968749999996,
+        "speedup": 1.0636053899071456,
+        "commit_ratio": 0.980718954248366,
+        "fire_rate": 0.24305555555555555,
+        "acc_loss_per_cycle": 0.08194444444444444
+      }
+    },
+    "m5_L36": {
+      "auc_reject": 0.8671,
+      "best@accloss=0.00": {
+        "probe_layer": 36,
+        "thr": 0.9669,
+        "compute_saving": 0.0013183593750000222,
+        "speedup": 1.0013200997408693,
+        "commit_ratio": 1.0,
+        "fire_rate": 0.008333333333333333,
+        "acc_loss_per_cycle": 0.0
+      },
+      "best@accloss=0.02": {
+        "probe_layer": 36,
+        "thr": 0.9326,
+        "compute_saving": 0.022924804687500022,
+        "speedup": 1.0191146380176552,
+        "commit_ratio": 0.9957516339869281,
+        "fire_rate": 0.1,
+        "acc_loss_per_cycle": 0.018055555555555554
+      },
+      "best@accloss=0.10": {
+        "probe_layer": 36,
+        "thr": 0.9007,
+        "compute_saving": 0.056689453124999956,
+        "speedup": 1.0400029501249575,
+        "commit_ratio": 0.9810457516339869,
+        "fire_rate": 0.24305555555555555,
+        "acc_loss_per_cycle": 0.08055555555555556
+      }
+    },
+    "m6_L45": {
+      "auc_reject": 0.8702,
+      "best@accloss=0.00": {
+        "probe_layer": 45,
+        "thr": 0.9735,
+        "compute_saving": 0.0008789062499999778,
+        "speedup": 1.0008796794057278,
+        "commit_ratio": 1.0,
+        "fire_rate": 0.008333333333333333,
+        "acc_loss_per_cycle": 0.0
+      },
+      "best@accloss=0.02": {
+        "probe_layer": 45,
+        "thr": 0.9403,
+        "compute_saving": 0.014990234375000022,
+        "speedup": 1.0115688834068965,
+        "commit_ratio": 0.99640522875817,
+        "fire_rate": 0.1,
+        "acc_loss_per_cycle": 0.015277777777777777
+      },
+      "best@accloss=0.10": {
+        "probe_layer": 45,
+        "thr": 0.9062,
+        "compute_saving": 0.03896484374999998,
+        "speedup": 1.0221821072703037,
+        "commit_ratio": 0.9823529411764705,
+        "fire_rate": 0.2625,
+        "acc_loss_per_cycle": 0.075
+      }
+    },
+    "m7_L54": {
+      "auc_reject": 0.8927,
+      "best@accloss=0.00": {
+        "probe_layer": 54,
+        "thr": 0.989,
+        "compute_saving": 0.0006835937500000444,
+        "speedup": 1.0006840613700771,
+        "commit_ratio": 1.0,
+        "fire_rate": 0.008333333333333333,
+        "acc_loss_per_cycle": 0.0
+      },
+      "best@accloss=0.02": {
+        "probe_layer": 54,
+        "thr": 0.966,
+        "compute_saving": 0.0069580078125,
+        "speedup": 1.0056904122025783,
+        "commit_ratio": 0.9986928104575163,
+        "fire_rate": 0.10972222222222222,
+        "acc_loss_per_cycle": 0.005555555555555556
+      },
+      "best@accloss=0.10": {
+        "probe_layer": 54,
+        "thr": 0.9238,
+        "compute_saving": 0.024462890624999956,
+        "speedup": 1.002296856143395,
+        "commit_ratio": 0.9777777777777777,
+        "fire_rate": 0.32222222222222224,
+        "acc_loss_per_cycle": 0.09444444444444444
+      }
+    },
+    "m8_L63": {
+      "auc_reject": 1.0,
+      "best@accloss=0.00": {
+        "probe_layer": 63,
+        "thr": 0.2889,
+        "compute_saving": 0.0,
+        "speedup": 1.0,
+        "commit_ratio": 1.0,
+        "fire_rate": 0.8013888888888889,
+        "acc_loss_per_cycle": 0.0
+      },
+      "best@accloss=0.02": {
+        "probe_layer": 63,
+        "thr": 0.2889,
+        "compute_saving": 0.0,
+        "speedup": 1.0,
+        "commit_ratio": 1.0,
+        "fire_rate": 0.8013888888888889,
+        "acc_loss_per_cycle": 0.0
+      },
+      "best@accloss=0.10": {
+        "probe_layer": 63,
+        "thr": 0.2889,
+        "compute_saving": 0.0,
+        "speedup": 1.0,
+        "commit_ratio": 1.0,
+        "fire_rate": 0.8013888888888889,
+        "acc_loss_per_cycle": 0.0
+      }
+    }
+  }
+}

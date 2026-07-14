@@ -1,0 +1,74 @@
+{
+  "epsilon": 0.25,
+  "delta": 0.1,
+  "mode": "logistic",
+  "n_seeds": 5,
+  "n_with_threshold": 0,
+  "runs": [
+    {
+      "mode": "logistic",
+      "epsilon": 0.25,
+      "delta": 0.1,
+      "seed": 0,
+      "n_train": 65,
+      "n_cal": 41,
+      "n_test": 73,
+      "tau": null,
+      "cal_coverage": 0.0,
+      "cal_ucb_false_rate": NaN,
+      "status": "no_threshold_meets_guarantee"
+    },
+    {
+      "mode": "logistic",
+      "epsilon": 0.25,
+      "delta": 0.1,
+      "seed": 1,
+      "n_train": 80,
+      "n_cal": 48,
+      "n_test": 51,
+      "tau": null,
+      "cal_coverage": 0.0,
+      "cal_ucb_false_rate": NaN,
+      "status": "no_threshold_meets_guarantee"
+    },
+    {
+      "mode": "logistic",
+      "epsilon": 0.25,
+      "delta": 0.1,
+      "seed": 2,
+      "n_train": 68,
+      "n_cal": 48,
+      "n_test": 63,
+      "tau": null,
+      "cal_coverage": 0.0,
+      "cal_ucb_false_rate": NaN,
+      "status": "no_threshold_meets_guarantee"
+    },
+    {
+      "mode": "logistic",
+      "epsilon": 0.25,
+      "delta": 0.1,
+      "seed": 3,
+      "n_train": 73,
+      "n_cal": 60,
+      "n_test": 46,
+      "tau": null,
+      "cal_coverage": 0.0,
+      "cal_ucb_false_rate": NaN,
+      "status": "no_threshold_meets_guarantee"
+    },
+    {
+      "mode": "logistic",
+      "epsilon": 0.25,
+      "delta": 0.1,
+      "seed": 4,
+      "n_train": 59,
+      "n_cal": 74,
+      "n_test": 46,
+      "tau": null,
+      "cal_coverage": 0.0,
+      "cal_ucb_false_rate": NaN,
+      "status": "no_threshold_meets_guarantee"
+    }
+  ]
+}

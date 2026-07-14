@@ -1,0 +1,82 @@
+{
+  "n_cycles": 1440,
+  "n_layers": 64,
+  "layer_ids": [
+    0,
+    9,
+    18,
+    27,
+    36,
+    45,
+    54,
+    63
+  ],
+  "accept_len_mean": 3.202777777777778,
+  "accept_len_hist": {
+    "0": 365,
+    "1": 202,
+    "2": 215,
+    "3": 112,
+    "4": 87,
+    "5": 80,
+    "6": 48,
+    "7": 40,
+    "8": 291
+  },
+  "best_overall_by_speedup": {
+    "probe_layer": 0,
+    "theta": 1.0,
+    "speedup": 1.716235701563807,
+    "compute_saving": 0.86107177734375,
+    "commit_ratio": 0.23843357567746198,
+    "fire_rate": 1.0,
+    "acc_loss_per_cycle": 3.2006944444444443
+  },
+  "best_saving_at_accloss": {
+    "0.0": {
+      "probe_layer": 63,
+      "theta": 1.0,
+      "speedup": 1.0,
+      "compute_saving": 0.0,
+      "commit_ratio": 1.0,
+      "fire_rate": 0.6270833333333333,
+      "acc_loss_per_cycle": 0.0
+    },
+    "0.01": {
+      "probe_layer": 63,
+      "theta": 1.0,
+      "speedup": 1.0,
+      "compute_saving": 0.0,
+      "commit_ratio": 1.0,
+      "fire_rate": 0.6270833333333333,
+      "acc_loss_per_cycle": 0.0
+    },
+    "0.05": {
+      "probe_layer": 63,
+      "theta": 1.0,
+      "speedup": 1.0,
+      "compute_saving": 0.0,
+      "commit_ratio": 1.0,
+      "fire_rate": 0.6270833333333333,
+      "acc_loss_per_cycle": 0.0
+    },
+    "0.10": {
+      "probe_layer": 45,
+      "theta": 15.0,
+      "speedup": 0.9866332502537519,
+      "compute_saving": 0.009228515625000044,
+      "commit_ratio": 0.9775280898876404,
+      "fire_rate": 0.07430555555555556,
+      "acc_loss_per_cycle": 0.09444444444444444
+    },
+    "0.25": {
+      "probe_layer": 36,
+      "theta": 15.0,
+      "speedup": 0.9819628040313952,
+      "compute_saving": 0.021679687500000044,
+      "commit_ratio": 0.9606741573033708,
+      "fire_rate": 0.10902777777777778,
+      "acc_loss_per_cycle": 0.16527777777777777
+    }
+  }
+}

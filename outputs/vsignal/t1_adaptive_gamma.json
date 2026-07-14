@@ -1,0 +1,156 @@
+{
+  "n_cycles": 1440,
+  "gcap": 8,
+  "fixed_gamma": {
+    "1": {
+      "mem_bound_passes_per_token": 1.0,
+      "compute_bound_verify_per_token": 1.0,
+      "tokens_per_cycle": 1.0
+    },
+    "2": {
+      "mem_bound_passes_per_token": 0.5725646123260437,
+      "compute_bound_verify_per_token": 1.1451292246520874,
+      "tokens_per_cycle": 1.7465277777777777
+    },
+    "3": {
+      "mem_bound_passes_per_token": 0.42502951593860683,
+      "compute_bound_verify_per_token": 1.2750885478158205,
+      "tokens_per_cycle": 2.352777777777778
+    },
+    "4": {
+      "mem_bound_passes_per_token": 0.35590706870983685,
+      "compute_bound_verify_per_token": 1.4236282748393474,
+      "tokens_per_cycle": 2.8097222222222222
+    },
+    "5": {
+      "mem_bound_passes_per_token": 0.313588850174216,
+      "compute_bound_verify_per_token": 1.5679442508710801,
+      "tokens_per_cycle": 3.188888888888889
+    },
+    "6": {
+      "mem_bound_passes_per_token": 0.28509206097802414,
+      "compute_bound_verify_per_token": 1.710552365868145,
+      "tokens_per_cycle": 3.5076388888888888
+    },
+    "7": {
+      "mem_bound_passes_per_token": 0.26519337016574585,
+      "compute_bound_verify_per_token": 1.856353591160221,
+      "tokens_per_cycle": 3.7708333333333335
+    },
+    "8": {
+      "mem_bound_passes_per_token": 0.24995660475611872,
+      "compute_bound_verify_per_token": 1.9996528380489498,
+      "tokens_per_cycle": 4.000694444444444
+    }
+  },
+  "MEMORY_BOUND (single-request, real)": {
+    "best_fixed_gamma": 8,
+    "best_fixed_passes_per_token": 0.24995660475611872,
+    "best_adaptive_passes_per_token": 0.2532981530343008,
+    "adaptive_speedup_vs_best_fixed": 0.9868078458600936
+  },
+  "COMPUTE_BOUND (large-batch)": {
+    "best_fixed_gamma": 1,
+    "best_fixed_verify_per_token": 1.0,
+    "best_adaptive_verify_per_token": 1.0009216589861751,
+    "adaptive_speedup_vs_best_fixed": 0.9990791896869244
+  },
+  "adaptive_grid": [
+    {
+      "theta": 0.09759893640875815,
+      "mem_bound_passes_per_token": 0.663594470046083,
+      "compute_bound_verify_per_token": 1.0009216589861751,
+      "tokens_per_cycle": 1.5069444444444444
+    },
+    {
+      "theta": 0.1633430664539337,
+      "mem_bound_passes_per_token": 0.6127659574468085,
+      "compute_bound_verify_per_token": 1.009787234042553,
+      "tokens_per_cycle": 1.6319444444444444
+    },
+    {
+      "theta": 0.24923998808860778,
+      "mem_bound_passes_per_token": 0.5746209098164405,
+      "compute_bound_verify_per_token": 1.014365522745411,
+      "tokens_per_cycle": 1.7402777777777778
+    },
+    {
+      "theta": 0.363838056564331,
+      "mem_bound_passes_per_token": 0.5228758169934641,
+      "compute_bound_verify_per_token": 1.0221496005809731,
+      "tokens_per_cycle": 1.9125
+    },
+    {
+      "theta": 0.4865466359853743,
+      "mem_bound_passes_per_token": 0.48096192384769537,
+      "compute_bound_verify_per_token": 1.0357381429525718,
+      "tokens_per_cycle": 2.0791666666666666
+    },
+    {
+      "theta": 0.6167625649770101,
+      "mem_bound_passes_per_token": 0.4418533292420988,
+      "compute_bound_verify_per_token": 1.0524700828474993,
+      "tokens_per_cycle": 2.2631944444444443
+    },
+    {
+      "theta": 0.7198256435394286,
+      "mem_bound_passes_per_token": 0.41131105398457585,
+      "compute_bound_verify_per_token": 1.0862610682662097,
+      "tokens_per_cycle": 2.43125
+    },
+    {
+      "theta": 0.838509363651275,
+      "mem_bound_passes_per_token": 0.3865771812080537,
+      "compute_bound_verify_per_token": 1.115973154362416,
+      "tokens_per_cycle": 2.5868055555555554
+    },
+    {
+      "theta": 0.9571113154093424,
+      "mem_bound_passes_per_token": 0.36354455945468317,
+      "compute_bound_verify_per_token": 1.168139358747791,
+      "tokens_per_cycle": 2.7506944444444446
+    },
+    {
+      "theta": 1.0805908493995664,
+      "mem_bound_passes_per_token": 0.3421240199572345,
+      "compute_bound_verify_per_token": 1.2207175100974104,
+      "tokens_per_cycle": 2.9229166666666666
+    },
+    {
+      "theta": 1.2295458682378122,
+      "mem_bound_passes_per_token": 0.3231597845601436,
+      "compute_bound_verify_per_token": 1.2820915619389588,
+      "tokens_per_cycle": 3.0944444444444446
+    },
+    {
+      "theta": 1.376173565864563,
+      "mem_bound_passes_per_token": 0.30296654744371976,
+      "compute_bound_verify_per_token": 1.3530401851462235,
+      "tokens_per_cycle": 3.3006944444444444
+    },
+    {
+      "theta": 1.55823335647583,
+      "mem_bound_passes_per_token": 0.28851933480264474,
+      "compute_bound_verify_per_token": 1.4512121819274695,
+      "tokens_per_cycle": 3.4659722222222222
+    },
+    {
+      "theta": 1.7670442487398783,
+      "mem_bound_passes_per_token": 0.27386839102320276,
+      "compute_bound_verify_per_token": 1.5760745530620008,
+      "tokens_per_cycle": 3.651388888888889
+    },
+    {
+      "theta": 2.120247072855631,
+      "mem_bound_passes_per_token": 0.2618657937806874,
+      "compute_bound_verify_per_token": 1.734679032551373,
+      "tokens_per_cycle": 3.81875
+    },
+    {
+      "theta": 2.7867992544174154,
+      "mem_bound_passes_per_token": 0.2532981530343008,
+      "compute_bound_verify_per_token": 1.894283201407212,
+      "tokens_per_cycle": 3.9479166666666665
+    }
+  ]
+}

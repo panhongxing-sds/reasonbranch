@@ -1,47 +1,23 @@
-# Action Study 报告索引
+# Outputs 索引
 
-**只看报告，打开下面文件即可。** JSON/原始数据在子目录。
+## 从这里开始（整理后的唯一阅读入口）
 
-| 版本 | 报告 | 数据目录 |
-|------|------|----------|
-| **v2** 数据采集 | [`pilot_v2_report.md`](pilot_v2_report.md) | `action_study_pilot_v2/` |
-| **v3** utility oracle | [`pilot_v3_report.md`](pilot_v3_report.md) | `action_study_pilot_v3/` |
-| **v3 audit phase 1** | [`pilot_v3_audit_report.md`](pilot_v3_audit_report.md) | step quality, weak/strong tiers |
-| **v3 audit phase 2** (QwQ) | [`pilot_v3_audit_phase2_report.md`](pilot_v3_audit_phase2_report.md) | shuffle + pairwise |
-| **v3.2 GPT oracle** | [`pilot_v3_2_report.md`](pilot_v3_2_report.md) | GPT-5.5 pairwise judge (greedy vs best branch) |
-| **v3.3 GPT step oracle** | [`pilot_v3_3_report.md`](pilot_v3_3_report.md) | GPT-5.5 per-candidate next-step (1G+4B) |
-| **v3.4 sequential rollout** | [`pilot_v3_4_report.md`](pilot_v3_4_report.md) | `action_study_pilot_v34/` |
-| **reachable-state** | [`reachable_state_report.md`](reachable_state_report.md) | `reachable_state_pilot/` |
+👉 **[`reports/README.md`](reports/README.md)**
 
-重新生成全部报告：
+内含：总决策矩阵 + 每个方法的完整报告（V3.5 / V3.6 / V4.0 / SD①–④）。
 
-```bash
-export AFS=/mnt/afs/L202500372 PYTHONPATH=$AFS
-/tmp/vllm-cu124/bin/python -m reasoning_branch_dataset.action_study.write_output_reports
-```
+---
 
-仅 V3 audit：
+## 本目录其余文件
 
-```bash
-/tmp/vllm-cu124/bin/python -m reasoning_branch_dataset.action_study.run_v3_oracle_audit
-```
+散落的 `pilot_*.md`、`v36_*`、`v40_*`、`sd_audit_*`、`lvd_*` 等是**原始实验产物**，已被 `reports/` 下的完整报告吸收。日常阅读请用 `reports/`，需要复现数字时再回查原始 JSON/子目录。
 
-V3.3 GPT next-step oracle（audit 312 或 `FULL=1` 全量 1548）：
+### 历史 V2–V3.4 原始报告（未重写，仍有效）
 
-```bash
-source /mnt/afs/L202500372/reasoning_branch_dataset/scripts/load_api_env.sh
-bash /mnt/afs/L202500372/reasoning_branch_dataset/scripts/run_v3_3_gpt_step_oracle.sh
-# 全量: FULL=1 bash .../run_v3_3_gpt_step_oracle.sh
-```
-
-V3.4b sequential rollout (P0 fixes, core policies only):
-
-```bash
-bash reasoning_branch_dataset/scripts/run_v3_4b.sh
-```
-
-No-API local pipeline (probe + verifier dataset + grading + target diagnostic):
-
-```bash
-bash reasoning_branch_dataset/scripts/run_local_pipeline.sh
-```
+| 版本 | 报告 |
+|------|------|
+| v2 | [`pilot_v2_report.md`](pilot_v2_report.md) |
+| v3 | [`pilot_v3_report.md`](pilot_v3_report.md) |
+| v3 audit | [`pilot_v3_audit_report.md`](pilot_v3_audit_report.md) |
+| v3.2–v3.4 | `pilot_v3_{2,3,4}*.md` |
+| reachable-state | [`reachable_state_report.md`](reachable_state_report.md) |

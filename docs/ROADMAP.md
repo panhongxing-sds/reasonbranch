@@ -1,39 +1,53 @@
 # Roadmap
 
-Priority order (no API required until local verifier is ready):
+Priority (SpecExit-style, one-step counterfactual first):
 
 ```
-修管线 → 训练 V3.3 local probe → GPT 标签蒸馏本地 verifier → V3.4b local rollout
+V3.6 One-Step Cost–Rescue Gate → (only if Branch wins) V3.7 sequential
 ```
 
-## P0 — Engineering (no API)
+## P0 — V3.6 One-Step Counterfactual Gate（当前）
 
-- [x] Separate technical failures (`ORACLE_API_ERROR`, `TARGET_GENERATION_ERROR`, `STEP_EXTRACTION_ERROR`)
-- [x] Target handoff extraction (`extract_handoff_step`, R1 think-block handling)
-- [x] Grading regression harness
-- [x] Target non-empty rate >99% — diagnostic 100/100 OK (`outputs/target_step_diagnostic/`)
+在 **greedy 已被拒** 的固定 prefix 上，配对测：
 
-## P1 — Local probe (V3.3 labels)
+- $T_H$: Direct Handoff（32B 生成一个完整 next step）
+- $T_B^{(K)}$: Branch@K 完整 pipeline（含失败 fallback）
+- $R^{\mathrm{safe}}$ vs $R^{\mathrm{exist}}$（selector gap）
+- $\Delta=T_H-T_B$, $Y^{\mathrm{profitable}}$
 
-- [x] Stage 1: Continue vs Intervention dataset (1395 samples)
-- [x] Stage 2: Branch vs Handoff dataset (166 samples)
-- [x] Logit-feature logistic probe with problem-level GroupKFold
-- [ ] Hidden-state probe (export draft hidden layers)
-- [ ] MLP / hidden+logit combined probe
+然后在三种结局中选一：**Fixed Handoff / Fixed Branch@K / Router**。
 
-## P2 — Local verifier (7320 GPT candidate labels)
+- [x] 框架文档 [`v3_6_one_step_cost_rescue.md`](v3_6_one_step_cost_rescue.md)
+- [x] Logit Accept/Reject verifier（单 token ` Accept`/` Reject`）
+- [x] Step boundary 生成（`<STEP_END>` / paragraph + status）
+- [x] Counterfactual timing engine（dual-resident pipeline）
+- [x] Rejected-state collector + Pilot runner + analyze
+- [ ] Pilot：64 rejected states × Handoff × Branch@{1,2,4}
+- [ ] Calibration：$\tau_A$ via DeepSeek V4 Pro / API oracle（precision≥99%）
+- [ ] 锁定三种结论之一；通过后才进 V3.7
 
-- [x] Build `candidate_labels.jsonl` from stable V3.3 passes
-- [ ] Zero-shot 14B ACCEPT/REJECT eval
-- [ ] LoRA/SFT if zero-shot below gate (action agreement ≥85%)
+```bash
+source /root/autodl-tmp/activate_reasonbranch.sh
+bash scripts/run_v3_6_pilot.sh
+```
 
-## P3 — V3.4b local rollout
+## Deprioritized / frozen
 
-- Local SpecReason vs Local Conditional Branch
-- No GPT API; 1.5B draft + 14B verifier/target dual-resident
+### V3.5 / V3.5a microbenchmark
+
+- Smoke 有用：证伪了 $C_{D4}+C_{V4}\ll C_T$ 的乐观先验
+- **不再**用强制 `step_max_tokens=96` 的分解成本下终局 never-branch 结论
+- V3.5a 长跑已停止；正式机制结论以 **V3.6 配对 pipeline** 为准
+
+### Earlier work
+
+- V3.3 GPT step oracle 标签资产保留
+- V3.4 sequential：污染 pilot，等 V3.6 通过后再做干净 V3.7
+- Local probe / verifier 蒸馏：不阻塞 V3.6
 
 ## Do not do yet
 
-- Expand polluted V3.4 results as mechanism evidence
-- Train sequential probe on V3.3 static labels directly
-- QwQ 0–9 utility labels for new experiments
+- 训 Branch/Handoff router（除非 V3.6 显示状态异质性）
+- Sequential cascade / 完整 trajectory（V3.7）
+- 用旧 4B V3.3 rescue rate 当最终 1.5B 数字
+- 预测 32B step 长度当作主路由信号

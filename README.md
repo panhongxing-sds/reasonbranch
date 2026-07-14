@@ -55,6 +55,7 @@ flowchart LR
 | **V3.3** GPT step oracle | ✅ 完成 | **1395 条稳定动作标签 + 7320 candidate 标签** | **是（主标签资产）** |
 | **V3.4** sequential rollout | ✅ pilot 跑通 | 150 rollouts、1067 steps | **否（数据污染）** |
 | **V3.4b** 工程修复 | ✅ 代码完成 | 错误码分离、grading、诊断脚本 | 待重跑 |
+| **V3.5 cost–rescue** | 🚧 管线已就绪 | $C_T,C_{DK},C_{VK},r_K^*$ + 决策报表 | **待跑完 A+B** |
 | **Local probe** | ✅ 初训完成 | S1 AUROC 0.676、S2 AUROC 0.718 | 待 hidden-state 增强 |
 | **Local verifier** | ⏳ 脚本就绪 | 7320 条蒸馏数据已导出 | 待 zero-shot eval |
 
@@ -404,35 +405,35 @@ bash scripts/download_r1_32b_awq.sh   # 可选 AWQ 版
 | V3.2 | `pilot_v3_2_report.md` | GPT pairwise |
 | **V3.3** | `pilot_v3_3_report.md` | **GPT step oracle 主标签** |
 | **V3.4** | `pilot_v3_4_report.md` | Sequential rollout pilot（含污染分析） |
+| **V3.5** | `pilot_v3_5_cost_rescue_report.md` | Cost–rescue gate：$r_K$ vs $r_K^*$ |
 | Reachable | `reachable_state_report.md` | Target replay 可达性 |
 
 ---
 
 ## 路线图
 
-当前优先级（**无需 API 直到 local verifier 达标**）：
+当前优先级：
 
 ```
-修管线 ✅ → 训练 V3.3 local probe ✅ → GPT 标签蒸馏本地 verifier ⏳ → V3.4b local rollout
+V3.6 One-Step Cost–Rescue Gate →（Branch 通过后）V3.7 sequential
 ```
 
-详见 [`docs/ROADMAP.md`](docs/ROADMAP.md)
+详见 [`docs/ROADMAP.md`](docs/ROADMAP.md)、[`docs/v3_6_one_step_cost_rescue.md`](docs/v3_6_one_step_cost_rescue.md)
 
 ### 明确不做
 
-- 用污染后的 V3.4 数字下「Branch 无效」结论
-- 把 V3.3 静态标签直接当 sequential 训练标签
+- 在 V3.6 证明收益前训 Branch router / 进 sequential cascade
+- 用 V3.5 分解成本或固定 96-token 设置下终局 never-branch 结论
+- 用旧 4B V3.3 rescue rate 当最终 1.5B 数字
 - 继续用 QwQ 0–9 构造新标签
 
 ### 待完成
 
 | 任务 | 依赖 |
 |------|------|
-| Local verifier zero-shot eval | GPU |
-| V3.4b 干净重跑（SpecReason vs CondBranch） | API 恢复 或 verifier 达标 |
-| Hidden-state probe | `export_hidden_pass.sh` |
-| 双卡分卡模式（2×40GB） | 代码实现 `CUDA_VISIBLE_DEVICES` |
-| 扩大样本（100+ 题，多 seed） | 上述完成 |
+| **V3.6 Pilot** 64 rejected states 配对 $T_H$ vs $T_B$ | GPU |
+| $\tau_A$ 校准（API oracle，precision≥99%） | API |
+| 三种结论锁定后：Fixed Handoff / Fixed Branch / Router→V3.7 | Pilot |
 
 ---
 

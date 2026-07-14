@@ -25,7 +25,7 @@ if [[ -z "${TEACHER_API_KEY:-}" ]]; then
   if [[ -n "${OR_KEY}" ]]; then
     export TEACHER_API_KEY="${OR_KEY}"
     export TEACHER_BASE_URL="${TEACHER_BASE_URL:-https://openrouter.ai/api/v1}"
-    export TEACHER_MODEL="${TEACHER_MODEL:-openai/gpt-4.1}"
+    export TEACHER_MODEL="${TEACHER_MODEL:-deepseek/deepseek-v4-pro}"
   fi
 fi
 

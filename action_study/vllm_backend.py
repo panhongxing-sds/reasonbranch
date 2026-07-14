@@ -29,6 +29,8 @@ class VLLMEngine:
         gpu_memory_utilization: float = 0.85,
         max_model_len: int = 8192,
         dtype: str = "bfloat16",
+        enable_prefix_caching: bool = False,
+        enforce_eager: bool = True,
     ) -> None:
         import os
 
@@ -36,8 +38,9 @@ class VLLMEngine:
 
         # Avoid slow/failing FlashInfer JIT on Qwen3.5 GDN layers.
         os.environ.setdefault("VLLM_GDN_PREFILL_BACKEND", "triton")
-        os.environ.setdefault("VLLM_USE_V1", "0")
         os.environ.setdefault("VLLM_WORKER_MULTIPROC_METHOD", "spawn")
+        os.environ.setdefault("VLLM_USE_FLASHINFER_SAMPLER", "0")
+        os.environ.pop("VLLM_USE_V1", None)
 
         llm_kwargs: dict[str, Any] = {
             "model": model_path,
@@ -45,7 +48,8 @@ class VLLMEngine:
             "trust_remote_code": True,
             "gpu_memory_utilization": gpu_memory_utilization,
             "max_model_len": max_model_len,
-            "enforce_eager": True,
+            "enforce_eager": enforce_eager,
+            "enable_prefix_caching": enable_prefix_caching,
             "additional_config": {"gdn_prefill_backend": "triton"},
         }
         if "Qwen3.5" in model_path or "qwen3.5" in model_path.lower():

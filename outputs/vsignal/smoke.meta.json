@@ -1,0 +1,16 @@
+{
+  "n_rows": 80,
+  "n_prompts": 2,
+  "gamma": 8,
+  "n_layers": 64,
+  "sample_layers": [
+    0,
+    9,
+    18,
+    27,
+    36,
+    45,
+    54,
+    63
+  ]
+}

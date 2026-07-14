@@ -184,6 +184,7 @@ def build_target_verifier(
     dual_resident: bool = False,
     quantization: str | None = None,
     prompt_logprobs: int = 20,
+    enable_prefix_caching: bool | None = None,
 ) -> TargetVerifier:
     if engine == "vllm":
         import os
@@ -192,8 +193,9 @@ def build_target_verifier(
         from vllm import LLM
 
         os.environ.setdefault("VLLM_GDN_PREFILL_BACKEND", "triton")
-        os.environ.setdefault("VLLM_USE_V1", "0")
         os.environ.setdefault("VLLM_WORKER_MULTIPROC_METHOD", "spawn")
+        os.environ.setdefault("VLLM_USE_FLASHINFER_SAMPLER", "0")
+        os.environ.pop("VLLM_USE_V1", None)
         tokenizer = AutoTokenizer.from_pretrained(model_path, trust_remote_code=True)
         mem = _vllm_memory_kwargs(
             model_path,
@@ -202,12 +204,15 @@ def build_target_verifier(
             max_model_len=max_model_len,
             dual_resident=dual_resident,
         )
+        # Default: disable for token-acceptance replay; V3.5 batch verify should
+        # turn this on so shared question+prefix prefill is reused across K cands.
+        prefix_cache = False if enable_prefix_caching is None else enable_prefix_caching
         llm_kwargs: dict[str, Any] = {
             "model": model_path,
             "dtype": dtype,
             "trust_remote_code": True,
             "enforce_eager": True,
-            "enable_prefix_caching": False,
+            "enable_prefix_caching": prefix_cache,
             **mem,
         }
         if "Qwen3.5" in Path(model_path).name or "qwen3.5" in model_path.lower():

@@ -1,0 +1,72 @@
+{
+  "latency_overall": {
+    "prefix_bucket": "all",
+    "step_bucket": "all",
+    "n": 4,
+    "c_t": 1.033234952017665,
+    "c_d1": 0.47748582251369953,
+    "c_d2": 0.45222334284335375,
+    "c_d4": 0.5621353178285062,
+    "c_v1": 0.23535566357895732,
+    "c_v2": 0.32959581445902586,
+    "c_v4": 0.5359253343194723,
+    "r1_star": 0.689912284423446,
+    "r2_star": 0.7566712254319994,
+    "r4_star": 1.0627405218955517
+  },
+  "rescue": {
+    "r1": 0.265,
+    "r2": 0.365,
+    "r4": 0.446,
+    "n_greedy_reject": 166,
+    "source": "v3.3_gpt_step_oracle_provisional_4B_draft"
+  },
+  "decisions": [
+    {
+      "k": 1,
+      "r_k": 0.265,
+      "r_k_star": 0.689912284423446,
+      "margin": -0.424912284423446,
+      "decision": "never_branch",
+      "rationale": "r_1=26.5% ≪ r_1^*=69.0% (margin=-42.5%) → skip fixed Branch; try smaller K or SpecReason",
+      "expected_branch_cost_sec": 1.4722691758256405,
+      "expected_handoff_cost_sec": 1.033234952017665,
+      "speedup_vs_handoff": 0.7017975849682735
+    },
+    {
+      "k": 2,
+      "r_k": 0.365,
+      "r_k_star": 0.7566712254319994,
+      "margin": -0.3916712254319994,
+      "decision": "never_branch",
+      "rationale": "r_2=36.5% ≪ r_2^*=75.7% (margin=-39.2%) → skip fixed Branch; try smaller K or SpecReason",
+      "expected_branch_cost_sec": 1.437923351833597,
+      "expected_handoff_cost_sec": 1.033234952017665,
+      "speedup_vs_handoff": 0.718560520420031
+    },
+    {
+      "k": 4,
+      "r_k": 0.446,
+      "r_k_star": 1.0627405218955517,
+      "margin": -0.6167405218955517,
+      "decision": "never_branch",
+      "rationale": "r_4=44.6% ≪ r_4^*=106.3% (margin=-61.7%) → skip fixed Branch; try smaller K or SpecReason",
+      "expected_branch_cost_sec": 1.6704728155657649,
+      "expected_handoff_cost_sec": 1.033234952017665,
+      "speedup_vs_handoff": 0.6185284443959798
+    }
+  ],
+  "primary_k4": {
+    "k": 4,
+    "r_k": 0.446,
+    "r_k_star": 1.0627405218955517,
+    "margin": -0.6167405218955517,
+    "decision": "never_branch",
+    "rationale": "r_4=44.6% ≪ r_4^*=106.3% (margin=-61.7%) → skip fixed Branch; try smaller K or SpecReason",
+    "expected_branch_cost_sec": 1.6704728155657649,
+    "expected_handoff_cost_sec": 1.033234952017665,
+    "speedup_vs_handoff": 0.6185284443959798
+  },
+  "recommendation": "never_branch",
+  "rationale": "r_4=44.6% ≪ r_4^*=106.3% (margin=-61.7%) → skip fixed Branch; try smaller K or SpecReason"
+}

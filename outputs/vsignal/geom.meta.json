@@ -1,0 +1,6 @@
+{
+  "n_rows": 11520,
+  "n_prompts": 60,
+  "gamma": 8,
+  "n_layers": 64
+}

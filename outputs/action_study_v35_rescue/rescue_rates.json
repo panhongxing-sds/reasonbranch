@@ -1,0 +1,7 @@
+{
+  "r1": 0.265,
+  "r2": 0.365,
+  "r4": 0.446,
+  "n_greedy_reject": 166,
+  "source": "v3.3_gpt_step_oracle_provisional_4B_draft"
+}
